@@ -1,0 +1,15 @@
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\bin\Debug\InventoryManager2022.exe.config
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\bin\Debug\InventoryManager2022.exe
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\bin\Debug\InventoryManager2022.pdb
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.csproj.AssemblyReference.cache
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.csproj.SuggestedBindingRedirects.cache
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.Properties.Resources.resources
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.csproj.GenerateResource.cache
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.csproj.CoreCompileInputs.cache
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.exe
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.pdb
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.formThongKe.resources
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.formMainMenu.resources
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.csproj.CopyComplete
+C:\Users\rainb\source\repos\InventoryManager2022\InventoryManager2022\obj\Debug\InventoryManager2022.HangHoa.resources
