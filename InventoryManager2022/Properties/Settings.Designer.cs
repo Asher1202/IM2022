@@ -32,5 +32,15 @@ namespace InventoryManager2022.Properties {
                 return ((string)(this["IM2022ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9HKHU3U;Initial Catalog=IM22;Integrated Security=True")]
+        public string IM22ConnectionString {
+            get {
+                return ((string)(this["IM22ConnectionString"]));
+            }
+        }
     }
 }

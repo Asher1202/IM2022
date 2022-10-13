@@ -5,8 +5,9 @@
 - [x] Main Menu.
 - [x] Dashboard.
 - [x] Inventory Order.
+- [x] Form quản lí nhân viên.
 ** Inventory Management **
-- [ ] Thêm, xóa, quản lí tất cả mặt hàng.
+- [x] Thêm, xóa, quản lí tất cả mặt hàng.
 - [ ] Thống kê số lượng hàng hóa tồn.
 - [ ] Thống kê số lượng hàng hóa trong kho.
 - [ ] Yêu cầu đặt hàng.
