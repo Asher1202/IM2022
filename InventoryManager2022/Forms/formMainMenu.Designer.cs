@@ -113,6 +113,7 @@
             this.btn_nhanvien.TabIndex = 8;
             this.btn_nhanvien.Text = "Nhân viên";
             this.btn_nhanvien.UseVisualStyleBackColor = false;
+            this.btn_nhanvien.Click += new System.EventHandler(this.btn_nhanvien_Click_1);
             // 
             // panelSubHangHoa
             // 
@@ -264,6 +265,7 @@
             this.panelShow.Name = "panelShow";
             this.panelShow.Size = new System.Drawing.Size(601, 413);
             this.panelShow.TabIndex = 4;
+            this.panelShow.Paint += new System.Windows.Forms.PaintEventHandler(this.panelShow_Paint);
             // 
             // formMainMenu
             // 
@@ -276,6 +278,7 @@
             this.Controls.Add(this.panelMenu);
             this.Name = "formMainMenu";
             this.Text = "formMainMenu";
+            this.Load += new System.EventHandler(this.formMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelSubHangHoa.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

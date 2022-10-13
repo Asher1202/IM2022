@@ -32,6 +32,7 @@ C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\EntityFramewor
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\EntityFramework.xml
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formHangHoa.resources
-C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Migrations.HangHoa.resources
-C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Migrations.IM22.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formNhanVien.resources
+C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formBanHang.resources
+C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Migrations.IM22.resources
+C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formQLHang.resources

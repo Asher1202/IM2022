@@ -13,7 +13,7 @@ namespace InventoryManager2022.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202210131046486_IM22"; }
+            get { return "202210131835315_IM22"; }
         }
         
         string IMigrationMetadata.Source

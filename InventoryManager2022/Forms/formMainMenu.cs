@@ -131,12 +131,28 @@ namespace InventoryManager2022
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new formBanHang());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formHangHoa());
+        }
+
+        private void formMainMenu_Load(object sender, EventArgs e)
+        {
+            OpenChildForm(new formThongKe());
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void btn_nhanvien_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new formNhanVien());
+        }
+
+        private void panelShow_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

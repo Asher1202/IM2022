@@ -1,6 +1,6 @@
 ﻿namespace InventoryManager2022.Forms
 {
-    partial class formHangHoa
+    partial class formQLHang
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.gb_ThongTin = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tenHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongNhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soTienBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nhapHangHoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iM22DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iM22DataSet = new InventoryManager2022.IM22DataSet();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.tb_tenhangtim = new System.Windows.Forms.TextBox();
+            this.lb_timhang = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lb_mahanghoa = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,63 +57,144 @@
             this.lb_loaihanghoa = new System.Windows.Forms.Label();
             this.lb_nhacungcap = new System.Windows.Forms.Label();
             this.lb_slnhap = new System.Windows.Forms.Label();
-            this.lb_tenhanghoa = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_timhang = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.tb_tenhangtim = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.nhapHangHoasTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhapHangHoasTableAdapter();
+            this.lb_tenhanghoa = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_save = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.gb_ThongTin = new System.Windows.Forms.GroupBox();
             this.btn_add = new FontAwesome.Sharp.IconButton();
             this.btn_remove = new FontAwesome.Sharp.IconButton();
-            this.tenHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuongNhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soTienBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gb_ThongTin.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gb_ThongTin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gb_ThongTin
+            // panel3
             // 
-            this.gb_ThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.gb_ThongTin.Controls.Add(this.textBox2);
-            this.gb_ThongTin.Controls.Add(this.lb_mahanghoa);
-            this.gb_ThongTin.Controls.Add(this.textBox1);
-            this.gb_ThongTin.Controls.Add(this.label1);
-            this.gb_ThongTin.Controls.Add(this.tb_sotien);
-            this.gb_ThongTin.Controls.Add(this.lb_sotien);
-            this.gb_ThongTin.Controls.Add(this.cb_loaihanghoa);
-            this.gb_ThongTin.Controls.Add(this.tb_nhacungcap);
-            this.gb_ThongTin.Controls.Add(this.tb_soluongnhap);
-            this.gb_ThongTin.Controls.Add(this.tb_tenhanghoa);
-            this.gb_ThongTin.Controls.Add(this.lb_loaihanghoa);
-            this.gb_ThongTin.Controls.Add(this.lb_nhacungcap);
-            this.gb_ThongTin.Controls.Add(this.lb_slnhap);
-            this.gb_ThongTin.Controls.Add(this.lb_tenhanghoa);
-            this.gb_ThongTin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gb_ThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gb_ThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_ThongTin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gb_ThongTin.Location = new System.Drawing.Point(0, 0);
-            this.gb_ThongTin.Margin = new System.Windows.Forms.Padding(0);
-            this.gb_ThongTin.Name = "gb_ThongTin";
-            this.gb_ThongTin.Size = new System.Drawing.Size(320, 378);
-            this.gb_ThongTin.TabIndex = 0;
-            this.gb_ThongTin.TabStop = false;
-            this.gb_ThongTin.Text = "Quản lí hàng hóa";
-            this.gb_ThongTin.Enter += new System.EventHandler(this.gb_ThongTin_Enter);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(320, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(756, 583);
+            this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tenHangDataGridViewTextBoxColumn,
+            this.soLuongNhapDataGridViewTextBoxColumn,
+            this.nhaCungCapDataGridViewTextBoxColumn,
+            this.loaiHangHoaDataGridViewTextBoxColumn,
+            this.soTienDataGridViewTextBoxColumn,
+            this.idDataGridViewTextBoxColumn,
+            this.soTienBanDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.nhapHangHoasBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(756, 583);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // tenHangDataGridViewTextBoxColumn
+            // 
+            this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.HeaderText = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
+            // 
+            // soLuongNhapDataGridViewTextBoxColumn
+            // 
+            this.soLuongNhapDataGridViewTextBoxColumn.DataPropertyName = "SoLuongNhap";
+            this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "SoLuongNhap";
+            this.soLuongNhapDataGridViewTextBoxColumn.Name = "soLuongNhapDataGridViewTextBoxColumn";
+            // 
+            // nhaCungCapDataGridViewTextBoxColumn
+            // 
+            this.nhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.Name = "nhaCungCapDataGridViewTextBoxColumn";
+            // 
+            // loaiHangHoaDataGridViewTextBoxColumn
+            // 
+            this.loaiHangHoaDataGridViewTextBoxColumn.DataPropertyName = "LoaiHangHoa";
+            this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "LoaiHangHoa";
+            this.loaiHangHoaDataGridViewTextBoxColumn.Name = "loaiHangHoaDataGridViewTextBoxColumn";
+            // 
+            // soTienDataGridViewTextBoxColumn
+            // 
+            this.soTienDataGridViewTextBoxColumn.DataPropertyName = "SoTien";
+            this.soTienDataGridViewTextBoxColumn.HeaderText = "SoTien";
+            this.soTienDataGridViewTextBoxColumn.Name = "soTienDataGridViewTextBoxColumn";
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // soTienBanDataGridViewTextBoxColumn
+            // 
+            this.soTienBanDataGridViewTextBoxColumn.DataPropertyName = "SoTienBan";
+            this.soTienBanDataGridViewTextBoxColumn.HeaderText = "SoTienBan";
+            this.soTienBanDataGridViewTextBoxColumn.Name = "soTienBanDataGridViewTextBoxColumn";
+            // 
+            // nhapHangHoasBindingSource
+            // 
+            this.nhapHangHoasBindingSource.DataMember = "NhapHangHoas";
+            this.nhapHangHoasBindingSource.DataSource = this.iM22DataSetBindingSource;
+            // 
+            // iM22DataSetBindingSource
+            // 
+            this.iM22DataSetBindingSource.DataSource = this.iM22DataSet;
+            this.iM22DataSetBindingSource.Position = 0;
+            // 
+            // iM22DataSet
+            // 
+            this.iM22DataSet.DataSetName = "IM22DataSet";
+            this.iM22DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlassArrowRight;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(12, 489);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(288, 36);
+            this.iconButton1.TabIndex = 13;
+            this.iconButton1.Text = "   &Tìm kiếm";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // tb_tenhangtim
+            // 
+            this.tb_tenhangtim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.tb_tenhangtim.Location = new System.Drawing.Point(160, 387);
+            this.tb_tenhangtim.Name = "tb_tenhangtim";
+            this.tb_tenhangtim.Size = new System.Drawing.Size(160, 31);
+            this.tb_tenhangtim.TabIndex = 17;
+            // 
+            // lb_timhang
+            // 
+            this.lb_timhang.AutoSize = true;
+            this.lb_timhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.lb_timhang.Location = new System.Drawing.Point(8, 387);
+            this.lb_timhang.Name = "lb_timhang";
+            this.lb_timhang.Size = new System.Drawing.Size(149, 25);
+            this.lb_timhang.TabIndex = 17;
+            this.lb_timhang.Text = "Tên hàng tìm :";
             // 
             // textBox2
             // 
@@ -114,23 +206,6 @@
             this.textBox2.TabIndex = 16;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // nhapHangHoasBindingSource
-            // 
-            this.nhapHangHoasBindingSource.DataMember = "NhapHangHoas";
-            this.nhapHangHoasBindingSource.DataSource = this.iM22DataSetBindingSource;
-            this.nhapHangHoasBindingSource.CurrentChanged += new System.EventHandler(this.nhapHangHoasBindingSource_CurrentChanged);
-            // 
-            // iM22DataSetBindingSource
-            // 
-            this.iM22DataSetBindingSource.DataSource = this.iM22DataSet;
-            this.iM22DataSetBindingSource.Position = 0;
-            this.iM22DataSetBindingSource.CurrentChanged += new System.EventHandler(this.iM22DataSetBindingSource_CurrentChanged);
-            // 
-            // iM22DataSet
-            // 
-            this.iM22DataSet.DataSetName = "IM22DataSet";
-            this.iM22DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lb_mahanghoa
             // 
             this.lb_mahanghoa.AutoSize = true;
@@ -140,7 +215,6 @@
             this.lb_mahanghoa.Size = new System.Drawing.Size(150, 25);
             this.lb_mahanghoa.TabIndex = 15;
             this.lb_mahanghoa.Text = "Mã hàng hóa :";
-            this.lb_mahanghoa.Click += new System.EventHandler(this.lb_mahanghoa_Click);
             // 
             // textBox1
             // 
@@ -161,7 +235,6 @@
             this.label1.Size = new System.Drawing.Size(99, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "Giá bán: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tb_sotien
             // 
@@ -182,7 +255,6 @@
             this.lb_sotien.Size = new System.Drawing.Size(91, 25);
             this.lb_sotien.TabIndex = 11;
             this.lb_sotien.Text = "Số tiền :";
-            this.lb_sotien.Click += new System.EventHandler(this.lb_sotien_Click);
             // 
             // cb_loaihanghoa
             // 
@@ -198,7 +270,6 @@
             this.cb_loaihanghoa.Name = "cb_loaihanghoa";
             this.cb_loaihanghoa.Size = new System.Drawing.Size(160, 33);
             this.cb_loaihanghoa.TabIndex = 7;
-            this.cb_loaihanghoa.SelectedIndexChanged += new System.EventHandler(this.cb_loaihanghoa_SelectedIndexChanged);
             // 
             // tb_nhacungcap
             // 
@@ -239,7 +310,6 @@
             this.lb_loaihanghoa.Size = new System.Drawing.Size(161, 25);
             this.lb_loaihanghoa.TabIndex = 3;
             this.lb_loaihanghoa.Text = "Loại hàng hóa :";
-            this.lb_loaihanghoa.Click += new System.EventHandler(this.lb_loaihanghoa_Click);
             // 
             // lb_nhacungcap
             // 
@@ -250,7 +320,6 @@
             this.lb_nhacungcap.Size = new System.Drawing.Size(157, 25);
             this.lb_nhacungcap.TabIndex = 2;
             this.lb_nhacungcap.Text = "Nhà cung cấp :";
-            this.lb_nhacungcap.Click += new System.EventHandler(this.lb_nhacungcap_Click);
             // 
             // lb_slnhap
             // 
@@ -261,7 +330,10 @@
             this.lb_slnhap.Size = new System.Drawing.Size(163, 25);
             this.lb_slnhap.TabIndex = 1;
             this.lb_slnhap.Text = "Số lượng nhập :";
-            this.lb_slnhap.Click += new System.EventHandler(this.lb_slnhap_Click);
+            // 
+            // nhapHangHoasTableAdapter
+            // 
+            this.nhapHangHoasTableAdapter.ClearBeforeFill = true;
             // 
             // lb_tenhanghoa
             // 
@@ -272,25 +344,6 @@
             this.lb_tenhanghoa.Size = new System.Drawing.Size(157, 25);
             this.lb_tenhanghoa.TabIndex = 0;
             this.lb_tenhanghoa.Text = "Tên hàng hóa :";
-            this.lb_tenhanghoa.Click += new System.EventHandler(this.lb_tenhanghoa_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.btn_save);
-            this.panel1.Controls.Add(this.tb_tenhangtim);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.lb_timhang);
-            this.panel1.Controls.Add(this.btn_add);
-            this.panel1.Controls.Add(this.btn_remove);
-            this.panel1.Controls.Add(this.gb_ThongTin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 538);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -298,80 +351,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 378);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 160);
+            this.panel2.Size = new System.Drawing.Size(2, 205);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // lb_timhang
-            // 
-            this.lb_timhang.AutoSize = true;
-            this.lb_timhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_timhang.Location = new System.Drawing.Point(8, 391);
-            this.lb_timhang.Name = "lb_timhang";
-            this.lb_timhang.Size = new System.Drawing.Size(149, 25);
-            this.lb_timhang.TabIndex = 17;
-            this.lb_timhang.Text = "Tên hàng tìm :";
-            this.lb_timhang.Click += new System.EventHandler(this.lb_timhang_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(320, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(722, 538);
-            this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlassArrowRight;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(13, 485);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(288, 36);
-            this.iconButton1.TabIndex = 13;
-            this.iconButton1.Text = "   &Tìm kiếm";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // tb_tenhangtim
-            // 
-            this.tb_tenhangtim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.tb_tenhangtim.Location = new System.Drawing.Point(163, 391);
-            this.tb_tenhangtim.Name = "tb_tenhangtim";
-            this.tb_tenhangtim.Size = new System.Drawing.Size(160, 31);
-            this.tb_tenhangtim.TabIndex = 17;
-            this.tb_tenhangtim.TextChanged += new System.EventHandler(this.tb_tenhangtim_TextChanged);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tenHangDataGridViewTextBoxColumn,
-            this.soLuongNhapDataGridViewTextBoxColumn,
-            this.nhaCungCapDataGridViewTextBoxColumn,
-            this.loaiHangHoaDataGridViewTextBoxColumn,
-            this.soTienDataGridViewTextBoxColumn,
-            this.idDataGridViewTextBoxColumn,
-            this.soTienBanDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.nhapHangHoasBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(722, 538);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // nhapHangHoasTableAdapter
-            // 
-            this.nhapHangHoasTableAdapter.ClearBeforeFill = true;
             // 
             // btn_save
             // 
@@ -383,12 +364,59 @@
             this.btn_save.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_save.IconSize = 30;
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(208, 451);
+            this.btn_save.Location = new System.Drawing.Point(209, 443);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(92, 28);
-            this.btn_save.TabIndex = 13;
+            this.btn_save.TabIndex = 10;
             this.btn_save.Text = "  Lưu";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.tb_tenhangtim);
+            this.panel1.Controls.Add(this.gb_ThongTin);
+            this.panel1.Controls.Add(this.lb_timhang);
+            this.panel1.Controls.Add(this.btn_save);
+            this.panel1.Controls.Add(this.btn_add);
+            this.panel1.Controls.Add(this.btn_remove);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(320, 583);
+            this.panel1.TabIndex = 3;
+            // 
+            // gb_ThongTin
+            // 
+            this.gb_ThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.gb_ThongTin.Controls.Add(this.textBox2);
+            this.gb_ThongTin.Controls.Add(this.lb_mahanghoa);
+            this.gb_ThongTin.Controls.Add(this.textBox1);
+            this.gb_ThongTin.Controls.Add(this.label1);
+            this.gb_ThongTin.Controls.Add(this.tb_sotien);
+            this.gb_ThongTin.Controls.Add(this.lb_sotien);
+            this.gb_ThongTin.Controls.Add(this.cb_loaihanghoa);
+            this.gb_ThongTin.Controls.Add(this.tb_nhacungcap);
+            this.gb_ThongTin.Controls.Add(this.tb_soluongnhap);
+            this.gb_ThongTin.Controls.Add(this.tb_tenhanghoa);
+            this.gb_ThongTin.Controls.Add(this.lb_loaihanghoa);
+            this.gb_ThongTin.Controls.Add(this.lb_nhacungcap);
+            this.gb_ThongTin.Controls.Add(this.lb_slnhap);
+            this.gb_ThongTin.Controls.Add(this.lb_tenhanghoa);
+            this.gb_ThongTin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gb_ThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gb_ThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_ThongTin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gb_ThongTin.Location = new System.Drawing.Point(0, 0);
+            this.gb_ThongTin.Margin = new System.Windows.Forms.Padding(0);
+            this.gb_ThongTin.Name = "gb_ThongTin";
+            this.gb_ThongTin.Size = new System.Drawing.Size(320, 378);
+            this.gb_ThongTin.TabIndex = 0;
+            this.gb_ThongTin.TabStop = false;
+            this.gb_ThongTin.Text = "Quản lí hàng hóa";
             // 
             // btn_add
             // 
@@ -400,12 +428,13 @@
             this.btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_add.IconSize = 30;
             this.btn_add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_add.Location = new System.Drawing.Point(12, 451);
+            this.btn_add.Location = new System.Drawing.Point(13, 443);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(92, 28);
-            this.btn_add.TabIndex = 11;
+            this.btn_add.TabIndex = 8;
             this.btn_add.Text = "  Thêm";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_remove
             // 
@@ -417,81 +446,52 @@
             this.btn_remove.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_remove.IconSize = 30;
             this.btn_remove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_remove.Location = new System.Drawing.Point(110, 451);
+            this.btn_remove.Location = new System.Drawing.Point(111, 443);
             this.btn_remove.Name = "btn_remove";
             this.btn_remove.Size = new System.Drawing.Size(92, 28);
-            this.btn_remove.TabIndex = 12;
+            this.btn_remove.TabIndex = 9;
             this.btn_remove.Text = "  Xóa";
             this.btn_remove.UseVisualStyleBackColor = true;
+            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
-            // tenHangDataGridViewTextBoxColumn
-            // 
-            this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
-            this.tenHangDataGridViewTextBoxColumn.HeaderText = "Tên hàng";
-            this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
-            // 
-            // soLuongNhapDataGridViewTextBoxColumn
-            // 
-            this.soLuongNhapDataGridViewTextBoxColumn.DataPropertyName = "SoLuongNhap";
-            this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "SoLuongNhap";
-            this.soLuongNhapDataGridViewTextBoxColumn.Name = "soLuongNhapDataGridViewTextBoxColumn";
-            // 
-            // nhaCungCapDataGridViewTextBoxColumn
-            // 
-            this.nhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "NhaCungCap";
-            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "NhaCungCap";
-            this.nhaCungCapDataGridViewTextBoxColumn.Name = "nhaCungCapDataGridViewTextBoxColumn";
-            // 
-            // loaiHangHoaDataGridViewTextBoxColumn
-            // 
-            this.loaiHangHoaDataGridViewTextBoxColumn.DataPropertyName = "LoaiHangHoa";
-            this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "LoaiHangHoa";
-            this.loaiHangHoaDataGridViewTextBoxColumn.Name = "loaiHangHoaDataGridViewTextBoxColumn";
-            // 
-            // soTienDataGridViewTextBoxColumn
-            // 
-            this.soTienDataGridViewTextBoxColumn.DataPropertyName = "SoTien";
-            this.soTienDataGridViewTextBoxColumn.HeaderText = "SoTien";
-            this.soTienDataGridViewTextBoxColumn.Name = "soTienDataGridViewTextBoxColumn";
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // soTienBanDataGridViewTextBoxColumn
-            // 
-            this.soTienBanDataGridViewTextBoxColumn.DataPropertyName = "SoTienBan";
-            this.soTienBanDataGridViewTextBoxColumn.HeaderText = "SoTienBan";
-            this.soTienBanDataGridViewTextBoxColumn.Name = "soTienBanDataGridViewTextBoxColumn";
-            // 
-            // formHangHoa
+            // formQLHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 538);
+            this.ClientSize = new System.Drawing.Size(1076, 583);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Name = "formHangHoa";
-            this.Text = "formHangHoa";
-            this.Load += new System.EventHandler(this.formHangHoa_Load);
-            this.gb_ThongTin.ResumeLayout(false);
-            this.gb_ThongTin.PerformLayout();
+            this.Name = "formQLHang";
+            this.Text = "test";
+            this.Load += new System.EventHandler(this.test_Load);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gb_ThongTin.ResumeLayout(false);
+            this.gb_ThongTin.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gb_ThongTin;
+        private System.Windows.Forms.Panel panel3;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.TextBox tb_tenhangtim;
+        private System.Windows.Forms.Label lb_timhang;
+        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource;
+        private System.Windows.Forms.BindingSource iM22DataSetBindingSource;
+        private IM22DataSet iM22DataSet;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lb_mahanghoa;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_sotien;
+        private System.Windows.Forms.Label lb_sotien;
         private System.Windows.Forms.ComboBox cb_loaihanghoa;
         private System.Windows.Forms.TextBox tb_nhacungcap;
         private System.Windows.Forms.TextBox tb_soluongnhap;
@@ -499,27 +499,15 @@
         private System.Windows.Forms.Label lb_loaihanghoa;
         private System.Windows.Forms.Label lb_nhacungcap;
         private System.Windows.Forms.Label lb_slnhap;
-        private System.Windows.Forms.Label lb_tenhanghoa;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox tb_sotien;
-        private System.Windows.Forms.Label lb_sotien;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.BindingSource iM22DataSetBindingSource;
-        private IM22DataSet iM22DataSet;
-        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource;
         private IM22DataSetTableAdapters.NhapHangHoasTableAdapter nhapHangHoasTableAdapter;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lb_mahanghoa;
-        private System.Windows.Forms.Label lb_timhang;
-        private System.Windows.Forms.TextBox tb_tenhangtim;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lb_tenhanghoa;
+        private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton btn_save;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox gb_ThongTin;
         private FontAwesome.Sharp.IconButton btn_add;
         private FontAwesome.Sharp.IconButton btn_remove;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenHangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongNhapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nhaCungCapDataGridViewTextBoxColumn;

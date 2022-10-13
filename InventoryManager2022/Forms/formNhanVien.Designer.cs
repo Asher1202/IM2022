@@ -30,17 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.nhapHangHoasTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhapHangHoasTableAdapter();
-            this.nhapHangHoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nhanVienInfoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iM22DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iM22DataSet = new InventoryManager2022.IM22DataSet();
+            this.nhapHangHoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.maNhanVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenNhanVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chucVuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_sdt = new System.Windows.Forms.Label();
             this.lb_namsinh = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_remove = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gb_ThongTin = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lb_email = new System.Windows.Forms.Label();
             this.cb_loaihanghoa = new System.Windows.Forms.ComboBox();
             this.tb_soluongnhap = new System.Windows.Forms.TextBox();
             this.tb_tenhanghoa = new System.Windows.Forms.TextBox();
@@ -49,46 +60,51 @@
             this.lb_manv = new System.Windows.Forms.Label();
             this.btn_save = new FontAwesome.Sharp.IconButton();
             this.btn_add = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lb_email = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).BeginInit();
+            this.nhapHangHoasTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhapHangHoasTableAdapter();
+            this.nhanVienInfoesTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhanVienInfoesTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.gb_ThongTin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhanVienInfoesBindingSource, "Email", true));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.textBox1.Location = new System.Drawing.Point(163, 292);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 31);
             this.textBox1.TabIndex = 14;
             this.textBox1.Text = "a@gmail.com";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // nhapHangHoasTableAdapter
+            // nhanVienInfoesBindingSource
             // 
-            this.nhapHangHoasTableAdapter.ClearBeforeFill = true;
-            // 
-            // nhapHangHoasBindingSource
-            // 
-            this.nhapHangHoasBindingSource.DataMember = "NhapHangHoas";
-            this.nhapHangHoasBindingSource.DataSource = this.iM22DataSetBindingSource;
+            this.nhanVienInfoesBindingSource.DataMember = "NhanVienInfoes";
+            this.nhanVienInfoesBindingSource.DataSource = this.iM22DataSetBindingSource;
+            this.nhanVienInfoesBindingSource.CurrentChanged += new System.EventHandler(this.nhanVienInfoesBindingSource_CurrentChanged);
             // 
             // iM22DataSetBindingSource
             // 
             this.iM22DataSetBindingSource.DataSource = this.iM22DataSet;
             this.iM22DataSetBindingSource.Position = 0;
+            this.iM22DataSetBindingSource.CurrentChanged += new System.EventHandler(this.iM22DataSetBindingSource_CurrentChanged);
             // 
             // iM22DataSet
             // 
             this.iM22DataSet.DataSetName = "IM22DataSet";
             this.iM22DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nhapHangHoasBindingSource
+            // 
+            this.nhapHangHoasBindingSource.DataMember = "NhapHangHoas";
+            this.nhapHangHoasBindingSource.DataSource = this.iM22DataSetBindingSource;
+            this.nhapHangHoasBindingSource.CurrentChanged += new System.EventHandler(this.nhapHangHoasBindingSource_CurrentChanged);
             // 
             // panel3
             // 
@@ -99,6 +115,77 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(474, 450);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maNhanVienDataGridViewTextBoxColumn,
+            this.idDataGridViewTextBoxColumn,
+            this.tenNhanVienDataGridViewTextBoxColumn,
+            this.chucVuDataGridViewTextBoxColumn,
+            this.ngaySinhDataGridViewTextBoxColumn,
+            this.soDienThoaiDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.nhanVienInfoesBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(474, 450);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // maNhanVienDataGridViewTextBoxColumn
+            // 
+            this.maNhanVienDataGridViewTextBoxColumn.DataPropertyName = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.HeaderText = "MaNhanVien";
+            this.maNhanVienDataGridViewTextBoxColumn.Name = "maNhanVienDataGridViewTextBoxColumn";
+            this.maNhanVienDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenNhanVienDataGridViewTextBoxColumn
+            // 
+            this.tenNhanVienDataGridViewTextBoxColumn.DataPropertyName = "TenNhanVien";
+            this.tenNhanVienDataGridViewTextBoxColumn.HeaderText = "TenNhanVien";
+            this.tenNhanVienDataGridViewTextBoxColumn.Name = "tenNhanVienDataGridViewTextBoxColumn";
+            this.tenNhanVienDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // chucVuDataGridViewTextBoxColumn
+            // 
+            this.chucVuDataGridViewTextBoxColumn.DataPropertyName = "ChucVu";
+            this.chucVuDataGridViewTextBoxColumn.HeaderText = "ChucVu";
+            this.chucVuDataGridViewTextBoxColumn.Name = "chucVuDataGridViewTextBoxColumn";
+            this.chucVuDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ngaySinhDataGridViewTextBoxColumn
+            // 
+            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
+            this.ngaySinhDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // soDienThoaiDataGridViewTextBoxColumn
+            // 
+            this.soDienThoaiDataGridViewTextBoxColumn.DataPropertyName = "SoDienThoai";
+            this.soDienThoaiDataGridViewTextBoxColumn.HeaderText = "SoDienThoai";
+            this.soDienThoaiDataGridViewTextBoxColumn.Name = "soDienThoaiDataGridViewTextBoxColumn";
+            this.soDienThoaiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // lb_sdt
             // 
@@ -109,6 +196,7 @@
             this.lb_sdt.Size = new System.Drawing.Size(150, 25);
             this.lb_sdt.TabIndex = 13;
             this.lb_sdt.Text = "Số điện thoại :";
+            this.lb_sdt.Click += new System.EventHandler(this.lb_sdt_Click);
             // 
             // lb_namsinh
             // 
@@ -119,6 +207,7 @@
             this.lb_namsinh.Size = new System.Drawing.Size(120, 25);
             this.lb_namsinh.TabIndex = 11;
             this.lb_namsinh.Text = "Ngày sinh :";
+            this.lb_namsinh.Click += new System.EventHandler(this.lb_namsinh_Click);
             // 
             // panel2
             // 
@@ -128,6 +217,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2, 106);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btn_remove
             // 
@@ -145,6 +235,7 @@
             this.btn_remove.TabIndex = 9;
             this.btn_remove.Text = "  Xóa";
             this.btn_remove.UseVisualStyleBackColor = true;
+            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
             // panel1
             // 
@@ -155,10 +246,12 @@
             this.panel1.Controls.Add(this.btn_add);
             this.panel1.Controls.Add(this.btn_remove);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 450);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // gb_ThongTin
             // 
@@ -186,9 +279,43 @@
             this.gb_ThongTin.TabIndex = 0;
             this.gb_ThongTin.TabStop = false;
             this.gb_ThongTin.Text = "Quản lí nhân viên";
+            this.gb_ThongTin.Enter += new System.EventHandler(this.gb_ThongTin_Enter);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.nhanVienInfoesBindingSource, "NgaySinh", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "d"));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(163, 203);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(160, 38);
+            this.dateTimePicker1.TabIndex = 17;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhanVienInfoesBindingSource, "SoDienThoai", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N0"));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.textBox2.Location = new System.Drawing.Point(164, 252);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(160, 31);
+            this.textBox2.TabIndex = 16;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // lb_email
+            // 
+            this.lb_email.AutoSize = true;
+            this.lb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.lb_email.Location = new System.Drawing.Point(6, 292);
+            this.lb_email.Name = "lb_email";
+            this.lb_email.Size = new System.Drawing.Size(77, 25);
+            this.lb_email.TabIndex = 15;
+            this.lb_email.Text = "Email :";
+            this.lb_email.Click += new System.EventHandler(this.lb_email_Click);
             // 
             // cb_loaihanghoa
             // 
+            this.cb_loaihanghoa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhanVienInfoesBindingSource, "ChucVu", true));
             this.cb_loaihanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.cb_loaihanghoa.FormattingEnabled = true;
             this.cb_loaihanghoa.Items.AddRange(new object[] {
@@ -198,24 +325,29 @@
             this.cb_loaihanghoa.Name = "cb_loaihanghoa";
             this.cb_loaihanghoa.Size = new System.Drawing.Size(160, 33);
             this.cb_loaihanghoa.TabIndex = 7;
+            this.cb_loaihanghoa.SelectedIndexChanged += new System.EventHandler(this.cb_loaihanghoa_SelectedIndexChanged);
             // 
             // tb_soluongnhap
             // 
+            this.tb_soluongnhap.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhanVienInfoesBindingSource, "TenNhanVien", true));
             this.tb_soluongnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.tb_soluongnhap.Location = new System.Drawing.Point(164, 121);
             this.tb_soluongnhap.Name = "tb_soluongnhap";
             this.tb_soluongnhap.Size = new System.Drawing.Size(160, 31);
             this.tb_soluongnhap.TabIndex = 5;
             this.tb_soluongnhap.Text = "Nguyễn Kim A";
+            this.tb_soluongnhap.TextChanged += new System.EventHandler(this.tb_soluongnhap_TextChanged);
             // 
             // tb_tenhanghoa
             // 
+            this.tb_tenhanghoa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhanVienInfoesBindingSource, "MaNhanVien", true));
             this.tb_tenhanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.tb_tenhanghoa.Location = new System.Drawing.Point(164, 76);
             this.tb_tenhanghoa.Name = "tb_tenhanghoa";
             this.tb_tenhanghoa.Size = new System.Drawing.Size(160, 31);
             this.tb_tenhanghoa.TabIndex = 4;
             this.tb_tenhanghoa.Text = "1202";
+            this.tb_tenhanghoa.TextChanged += new System.EventHandler(this.tb_tenhanghoa_TextChanged);
             // 
             // lb_chucvu
             // 
@@ -226,6 +358,7 @@
             this.lb_chucvu.Size = new System.Drawing.Size(103, 25);
             this.lb_chucvu.TabIndex = 3;
             this.lb_chucvu.Text = "Chức vụ :";
+            this.lb_chucvu.Click += new System.EventHandler(this.lb_chucvu_Click);
             // 
             // lb_tennhanvien
             // 
@@ -236,6 +369,7 @@
             this.lb_tennhanvien.Size = new System.Drawing.Size(149, 25);
             this.lb_tennhanvien.TabIndex = 1;
             this.lb_tennhanvien.Text = "Tên nhân viên";
+            this.lb_tennhanvien.Click += new System.EventHandler(this.lb_tennhanvien_Click);
             // 
             // lb_manv
             // 
@@ -246,6 +380,7 @@
             this.lb_manv.Size = new System.Drawing.Size(154, 25);
             this.lb_manv.TabIndex = 0;
             this.lb_manv.Text = "Mã nhân viên :";
+            this.lb_manv.Click += new System.EventHandler(this.lb_manv_Click);
             // 
             // btn_save
             // 
@@ -263,6 +398,7 @@
             this.btn_save.TabIndex = 10;
             this.btn_save.Text = "  Lưu";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_add
             // 
@@ -280,42 +416,15 @@
             this.btn_add.TabIndex = 8;
             this.btn_add.Text = "  Thêm";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // dataGridView1
+            // nhapHangHoasTableAdapter
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(474, 450);
-            this.dataGridView1.TabIndex = 0;
+            this.nhapHangHoasTableAdapter.ClearBeforeFill = true;
             // 
-            // lb_email
+            // nhanVienInfoesTableAdapter
             // 
-            this.lb_email.AutoSize = true;
-            this.lb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_email.Location = new System.Drawing.Point(6, 292);
-            this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(77, 25);
-            this.lb_email.TabIndex = 15;
-            this.lb_email.Text = "Email :";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.textBox2.Location = new System.Drawing.Point(164, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 31);
-            this.textBox2.TabIndex = 16;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(163, 203);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(160, 38);
-            this.dateTimePicker1.TabIndex = 17;
+            this.nhanVienInfoesTableAdapter.ClearBeforeFill = true;
             // 
             // formNhanVien
             // 
@@ -326,14 +435,16 @@
             this.Controls.Add(this.panel1);
             this.Name = "formNhanVien";
             this.Text = "formNhanVien";
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).EndInit();
+            this.Load += new System.EventHandler(this.formNhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.gb_ThongTin.ResumeLayout(false);
             this.gb_ThongTin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,5 +475,14 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lb_email;
+        private System.Windows.Forms.BindingSource nhanVienInfoesBindingSource;
+        private IM22DataSetTableAdapters.NhanVienInfoesTableAdapter nhanVienInfoesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maNhanVienDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenNhanVienDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chucVuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoaiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }
 }

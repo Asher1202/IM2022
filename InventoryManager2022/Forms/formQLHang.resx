@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Target" xml:space="preserve">
-    <value>H4sIAAAAAAAEAM1Yy3LbNhTdd6b/wOGqnXEEWd6kHioZh7YbTy07EyrZQ+QVhSkIsASoEb+ti35Sf6EXfD8kRpLdtKONANx77gPAwZH+/vMv5/0u4tYWEsWkmNuXk6ltgfBlwEQ4t1O9fvPWfv/uxx+cuyDaWV8ruytjh55Cze2N1vE1IcrfQETVJGJ+IpVc64kvI0IDSWbT6S/k8pIAQtiIZVnO51RoFkE+wKErhQ+xTilfyAC4KudxxctRrScagYqpD3P7QWxBaJlkCypoCMlsOptNXE6VAmVbN5xRzMkDvrYtKoTUVGPG118UeDqRIvRinKB8mcWAdmvKFZSVXDfmxxY1nZmiSONYQfmp0jI6EfDyquwS6buf1Wu77iL28Q77rTNTdd7Luf20ofFHKsKPktpWP961yxNje6DbLd8La5/FRX1S8ECZz4XlplynCcwFpDqh/ML6lK4483+DbCl/BzEXKeftjDFnXOtM4NSnRMaQ6OwzrMs6liBMKrZFus6k71379h2LQvF0MDNa0N0jiFBv8DLM3trWPdtBUM2Ux+WLYHhD0EknKQ6fMHW64lCvk9HALKhiPgh9NTvZ35OPKR5kswkjyePXo5Ifj4VB3FSE7ncI9Sgpqw/kvxzLk0sG4juF+UBfO5JDmus8vORIppoyAUmZRdnUnFnNGuz0nhuPBFleelWG7JZWYHugS9S7KOZMIVKTSkG7kw6z7Eu7TrCheVLwfPUekAMPgrOgcYwdbD0Q5YzlFa+D+8Y7nSyjAoP4ag9n1tnWkZDskOh6qxgaM71nidK3VNMVNXvoBtHAbN92HGh1FbHb8T4nNhtQ2Zvvhc/YY9nZqB5o09h7rDVCjLxsqFPrPiAD7/zlppwmh0jXlTyNxCiFj+EYDm1DmPHx3h0GbcN0Fo7Ha7NkG649fzxahwjbcJ2FU6otyK5baDF3KkrOZUOgfHqI5ZDeIeofXTI4u71HvH8Vxtikb1JHr1mlxx5OeZO/rTkHV7swsS1s0pYF5lp7mdIQTYzBxPuDuxzbohsDvH9sDUoXYsdGsTfridX/j3AkSgX8ePX4H4o2saWJv6HJULadrcmY2bWXK7Iqs58iuvu5DXie6noR3B5l9SK8rnp6BaiWQjoB7TQVNHydx/VNR8WMa5yCDOZ2sJJYRpFuy0CdrYKG/OSQ9i9n5xYUCxsI8ztagG8ufgNa2TyItay6j2W2M6pMepuzAE0D7NZNotma+hqXfVAqV7BfKU9zTbKC4EE8pzpO9Q2qimjFs3a9DhmPn0u9bs7Oc2xG6jVKwDQZlgDP4kPKeFDnfT+81ocgzMH5FXA+J1RU8AgXZjXSkxRHApXtu4UYRICPwxJQ0CGYehYe3cI5uaFof4SQ+ln1zBwG+fZGdNvu3DIaJjRSJUbjb/4NIubvoHf/AAu1TI9AEgAA</value>
-  </data>
-  <data name="DefaultSchema" xml:space="preserve">
-    <value>dbo</value>
-  </data>
+  <metadata name="nhapHangHoasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>763, 17</value>
+  </metadata>
+  <metadata name="nhapHangHoasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>763, 17</value>
+  </metadata>
+  <metadata name="iM22DataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>978, 17</value>
+  </metadata>
+  <metadata name="iM22DataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>978, 17</value>
+  </metadata>
+  <metadata name="iM22DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1178, 17</value>
+  </metadata>
+  <metadata name="iM22DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1178, 17</value>
+  </metadata>
+  <metadata name="nhapHangHoasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
 </root>

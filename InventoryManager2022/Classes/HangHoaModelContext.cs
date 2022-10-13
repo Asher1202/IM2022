@@ -12,6 +12,6 @@ namespace InventoryManager2022.Classes
 
         public HangHoaModelContext() : base("name=con") { }
         public DbSet<NhapHangHoa> Emplist { get; set; }
-
+        public DbSet<NhanVienInfo> nhanVienInfos { get; set; }
     }
 }

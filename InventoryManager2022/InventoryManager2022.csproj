@@ -67,6 +67,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\HangHoaModelContext.cs" />
+    <Compile Include="Classes\NhanVienInfo.cs" />
+    <Compile Include="Forms\formBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formBanHang.Designer.cs">
+      <DependentUpon>formBanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\formHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,22 +99,27 @@
       <DependentUpon>formThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\NhapHangHoa.cs" />
+    <Compile Include="Forms\formQLHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formQLHang.Designer.cs">
+      <DependentUpon>formQLHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="IM22DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202210131005122_HangHoa.cs" />
-    <Compile Include="Migrations\202210131005122_HangHoa.designer.cs">
-      <DependentUpon>202210131005122_HangHoa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202210131046486_IM22.cs" />
-    <Compile Include="Migrations\202210131046486_IM22.designer.cs">
-      <DependentUpon>202210131046486_IM22.cs</DependentUpon>
+    <Compile Include="Migrations\202210131835315_IM22.cs" />
+    <Compile Include="Migrations\202210131835315_IM22.designer.cs">
+      <DependentUpon>202210131835315_IM22.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\formBanHang.resx">
+      <DependentUpon>formBanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\formHangHoa.resx">
       <DependentUpon>formHangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,11 +132,11 @@
     <EmbeddedResource Include="Forms\formThongKe.resx">
       <DependentUpon>formThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202210131005122_HangHoa.resx">
-      <DependentUpon>202210131005122_HangHoa.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\formQLHang.resx">
+      <DependentUpon>formQLHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202210131046486_IM22.resx">
-      <DependentUpon>202210131046486_IM22.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202210131835315_IM22.resx">
+      <DependentUpon>202210131835315_IM22.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

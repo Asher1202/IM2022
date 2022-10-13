@@ -22,16 +22,10 @@ namespace InventoryManager2022.Forms
         {
             // TODO: This line of code loads data into the 'iM22DataSet.NhapHangHoas' table. You can move, or remove it, as needed.
             this.nhapHangHoasTableAdapter.Fill(this.iM22DataSet.NhapHangHoas);
-            // TODO: This line of code loads data into the 'iM22DataSet.NhapHangHoas' table. You can move, or remove it, as needed.
-            this.nhapHangHoasTableAdapter.Fill(this.iM22DataSet.NhapHangHoas);
-            // TODO: This line of code loads data into the 'iM22DataSet.NhapHangHoas' table. You can move, or remove it, as needed.
-            this.nhapHangHoasTableAdapter.Fill(this.iM22DataSet.NhapHangHoas);
-            // TODO: This line of code loads data into the 'iM22DataSet.NhapHangHoas' table. You can move, or remove it, as needed.
-            this.nhapHangHoasTableAdapter.Fill(this.iM22DataSet.NhapHangHoas);
-            using (HangHoaModelContext db = new HangHoaModelContext())
+            /*sing (HangHoaModelContext db = new HangHoaModelContext())
             {
                 nhapHangHoasBindingSource.DataSource = db.Emplist.ToList();
-            }
+            }*/
             gb_ThongTin.Enabled = false;
             //panel1.Enabled = false;
             btn_add.Enabled = true;
@@ -63,8 +57,7 @@ namespace InventoryManager2022.Forms
                     if (obj.id == 0)
                     {
 
-                        db.Entry<NhapHangHoa>(obj).State =
-                        System.Data.Entity.EntityState.Added;
+                        db.Entry<NhapHangHoa>(obj).State = System.Data.Entity.EntityState.Added;
                     }
                     else
                     {
@@ -88,7 +81,7 @@ namespace InventoryManager2022.Forms
 
         private void btn_remove_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn xóa dòng này", "Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn xóa dòng này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 using (HangHoaModelContext db = new HangHoaModelContext())
                 {
@@ -109,6 +102,137 @@ namespace InventoryManager2022.Forms
                     }
                 }
             }
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.Refresh();
+            // MessageBox.Show(data.SupportsFiltering.ToString());
+        }
+
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            nhapHangHoasBindingSource.Filter = "TenHang LIKE '%" + tb_tenhangtim.Text + "%'";
+            dataGridView1.Refresh();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gb_ThongTin_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nhapHangHoasBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iM22DataSetBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_mahanghoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_sotien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_sotien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_loaihanghoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_nhacungcap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_soluongnhap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_tenhanghoa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_loaihanghoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_nhacungcap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_slnhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_tenhanghoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_timhang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tb_tenhangtim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
