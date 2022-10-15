@@ -45,6 +45,24 @@
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -66,7 +84,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ChiTietHD.cs" />
     <Compile Include="Classes\HangHoaModelContext.cs" />
+    <Compile Include="Classes\inHoaDon.cs" />
     <Compile Include="Classes\NhanVienInfo.cs" />
     <Compile Include="Forms\formBanHang.cs">
       <SubType>Form</SubType>
@@ -80,6 +100,12 @@
     <Compile Include="Forms\formHangHoa.Designer.cs">
       <DependentUpon>formHangHoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\formThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formThanhToan.Designer.cs">
+      <DependentUpon>formThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\formMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +117,12 @@
     </Compile>
     <Compile Include="Forms\formNhanVien.Designer.cs">
       <DependentUpon>formNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formPrintInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formPrintInvoice.Designer.cs">
+      <DependentUpon>formPrintInvoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\formThongKe.cs">
       <SubType>Form</SubType>
@@ -105,23 +137,35 @@
     <Compile Include="Forms\formQLHang.Designer.cs">
       <DependentUpon>formQLHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\formXemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formXemHoaDon.Designer.cs">
+      <DependentUpon>formXemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\loginForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\loginForm1.Designer.cs">
+      <DependentUpon>loginForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="IM22DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202210131835315_IM22.cs" />
-    <Compile Include="Migrations\202210131835315_IM22.designer.cs">
-      <DependentUpon>202210131835315_IM22.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Forms\formBanHang.resx">
       <DependentUpon>formBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formHangHoa.resx">
       <DependentUpon>formHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formThanhToan.resx">
+      <DependentUpon>formThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formMainMenu.resx">
       <DependentUpon>formMainMenu.cs</DependentUpon>
@@ -129,14 +173,20 @@
     <EmbeddedResource Include="Forms\formNhanVien.resx">
       <DependentUpon>formNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formPrintInvoice.resx">
+      <DependentUpon>formPrintInvoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\formThongKe.resx">
       <DependentUpon>formThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formQLHang.resx">
       <DependentUpon>formQLHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202210131835315_IM22.resx">
-      <DependentUpon>202210131835315_IM22.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\formXemHoaDon.resx">
+      <DependentUpon>formXemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\loginForm1.resx">
+      <DependentUpon>loginForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,7 +196,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report\Report1.rdlc" />
     <None Include="IM22DataSet.xsc">
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
     </None>
@@ -159,6 +211,7 @@
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\IM22DataSet.inHoaDonsDataTable.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -171,6 +224,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Items\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0af3c9613761d2d2394d99312aeba397.gif" />
+    <None Include="Resources\bach-hoa-xanh-logo-02-06-2020-200x200-2.png" />
+    <None Include="Resources\user_icon_150670.png" />
+    <None Include="Resources\lock+password+protect+safety+security+icon-1320086045132546966.png" />
+    <None Include="Resources\dangnhap.icon.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

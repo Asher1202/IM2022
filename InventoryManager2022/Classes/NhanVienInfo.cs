@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +10,14 @@ namespace InventoryManager2022.Classes
 {
     public class NhanVienInfo
     {
+        
         public int id { get; set; }
         [Key]
         public string MaNhanVien { get; set; }
         public string TenNhanVien { get; set; }
         public string ChucVu { get; set; }
+
+        public string MatKhau { get; set; }
 
         public string NgaySinh { get; set; }
 
@@ -22,5 +26,6 @@ namespace InventoryManager2022.Classes
         
         [EmailAddress]
         public string Email { get; set; }
+        
     }
 }

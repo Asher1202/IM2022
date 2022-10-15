@@ -17,7 +17,7 @@ namespace InventoryManager2022
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formMainMenu());
+            Application.Run(new loginForm1());
         }
     }
 }

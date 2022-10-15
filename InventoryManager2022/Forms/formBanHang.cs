@@ -15,6 +15,10 @@ namespace InventoryManager2022.Forms
 {
     public partial class formBanHang : Form
     {
+        public static string ttSoLuong;
+        public static string ttGiaBan;
+        public static string ttTenKhach;
+        public static string TTLoaiHang;
         public formBanHang()
         {
             InitializeComponent();
@@ -30,12 +34,17 @@ namespace InventoryManager2022.Forms
             // TODO: This line of code loads data into the 'iM22DataSet1.NhapHangHoas' table. You can move, or remove it, as needed.
             this.nhapHangHoasTableAdapter.Fill(this.iM22DataSet.NhapHangHoas);
 
+            //this.reportViewer1.RefreshReport();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        //private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    DataGridViewRow row = new DataGridViewRow();
+        //    row = dataGridView1.Rows[e.RowIndex];
+        //    ttSoLuong = row.Cells[1].ToString();
+        //    ttGiaBan = row.Cells[6].ToString();
+        //    MessageBox.Show("b" + ttSoLuong + ttGiaBan);
+        //}
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
@@ -43,39 +52,107 @@ namespace InventoryManager2022.Forms
             nhapHangHoasBindingSource.Filter = "TenHang LIKE '%" + tb_tenhang.Text + "%'";
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        public void iconButton2_Click(object sender, EventArgs e)
         {
-            if (int.Parse(tb_soluongton.Text) - int.Parse(tb_slmua.Text) <= 0) {
-                MessageBox.Show("Khách hàng không thể mua hàng với số lượng này");
+            if (formBanHang.ttSoLuong == null)
+            {
+                MessageBox.Show("Bạn chưa chọn món hàng nào để thanh toán, vui lòng chọn");
                 return;
             }
-            else
-            {
-                tb_tongtien.Text = (int.Parse(tb_slmua.Text)*int.Parse(tb_giaban.Text)).ToString();
-            }
+            formThanhToan f2 = new formThanhToan();
+                
+            f2.ShowDialog();
+            this.Close();
             
 
         }
 
         private void tb_tongtien_TextChanged(object sender, EventArgs e)
         {
-            string value = tb_tongtien.Text.Replace(",", "")
-                .Replace("VND", "").Replace(".", "").TrimStart('0');
-            decimal ul;
-            if (decimal.TryParse(value, out ul))
-            {
-                ul /= 100;
-                tb_tongtien.TextChanged -= textBox1_TextChanged;
-                tb_tongtien.Text = string.Format(CultureInfo.CreateSpecificCulture("vi-VN"), "{0:C}", ul);
-                tb_tongtien.TextChanged += textBox1_TextChanged;
-                tb_tongtien.Select(tb_tongtien.Text.Length, 0);
-            }
-        }
-        private bool TextisValid(string text)
-        {
-            Regex money = new Regex(@"^\$(\d{1,3}(\,\d{3})*|(\d+))(\.\d{2})?$");
-            return money.IsMatch(text);
+            
         }
 
+        private void tb_soluongton_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dataGridView1.Rows[e.RowIndex];
+            ttTenKhach = row.Cells[0].Value.ToString();
+            ttSoLuong = row.Cells[1].Value.ToString();
+            TTLoaiHang = row.Cells[3].Value.ToString();
+            ttGiaBan = row.Cells[6].Value.ToString();
+
+            
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void nhanVienInfoesBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iM22DataSetBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nhapHangHoasBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_loaihang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_giaban_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nhapHangHoasBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -49,10 +49,6 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cb_loaihang = new System.Windows.Forms.Label();
-            this.tb_tongtien = new System.Windows.Forms.TextBox();
-            this.tb_slmua = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tb_giaban = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_soluongton = new System.Windows.Forms.TextBox();
@@ -61,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.iM22DataSet1 = new InventoryManager2022.IM22DataSet();
             this.nhapHangHoasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.inHoaDonsTableAdapter1 = new InventoryManager2022.IM22DataSetTableAdapters.inHoaDonsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).BeginInit();
@@ -76,11 +73,13 @@
             // 
             this.nhanVienInfoesBindingSource.DataMember = "NhanVienInfoes";
             this.nhanVienInfoesBindingSource.DataSource = this.iM22DataSetBindingSource;
+            this.nhanVienInfoesBindingSource.CurrentChanged += new System.EventHandler(this.nhanVienInfoesBindingSource_CurrentChanged);
             // 
             // iM22DataSetBindingSource
             // 
             this.iM22DataSetBindingSource.DataSource = this.iM22DataSet;
             this.iM22DataSetBindingSource.Position = 0;
+            this.iM22DataSetBindingSource.CurrentChanged += new System.EventHandler(this.iM22DataSetBindingSource_CurrentChanged);
             // 
             // iM22DataSet
             // 
@@ -99,6 +98,7 @@
             // 
             this.nhapHangHoasBindingSource.DataMember = "NhapHangHoas";
             this.nhapHangHoasBindingSource.DataSource = this.iM22DataSetBindingSource;
+            this.nhapHangHoasBindingSource.CurrentChanged += new System.EventHandler(this.nhapHangHoasBindingSource_CurrentChanged);
             // 
             // panel3
             // 
@@ -110,6 +110,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 450);
             this.panel3.TabIndex = 6;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // dataGridView1
             // 
@@ -127,8 +128,10 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 152);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(800, 298);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tenHangDataGridViewTextBoxColumn
@@ -180,10 +183,6 @@
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.cb_loaihang);
-            this.panel1.Controls.Add(this.tb_tongtien);
-            this.panel1.Controls.Add(this.tb_slmua);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.tb_giaban);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.tb_soluongton);
@@ -195,6 +194,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 152);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bt_thanhtoan
             // 
@@ -238,6 +238,7 @@
             this.comboBox1.Size = new System.Drawing.Size(112, 21);
             this.comboBox1.TabIndex = 11;
             this.comboBox1.ValueMember = "LoaiHangHoa";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // cb_loaihang
             // 
@@ -248,42 +249,7 @@
             this.cb_loaihang.Size = new System.Drawing.Size(99, 22);
             this.cb_loaihang.TabIndex = 10;
             this.cb_loaihang.Text = "Loại hàng :";
-            // 
-            // tb_tongtien
-            // 
-            this.tb_tongtien.Location = new System.Drawing.Point(554, 48);
-            this.tb_tongtien.Name = "tb_tongtien";
-            this.tb_tongtien.Size = new System.Drawing.Size(112, 20);
-            this.tb_tongtien.TabIndex = 9;
-            this.tb_tongtien.TextChanged += new System.EventHandler(this.tb_tongtien_TextChanged);
-
-            // 
-            // tb_slmua
-            // 
-            this.tb_slmua.Location = new System.Drawing.Point(554, 17);
-            this.tb_slmua.Name = "tb_slmua";
-            this.tb_slmua.Size = new System.Drawing.Size(112, 20);
-            this.tb_slmua.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.label5.Location = new System.Drawing.Point(418, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 22);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Tổng giá tiền :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.label4.Location = new System.Drawing.Point(418, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 22);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Số lượng mua :";
+            this.cb_loaihang.Click += new System.EventHandler(this.cb_loaihang_Click);
             // 
             // tb_giaban
             // 
@@ -292,6 +258,7 @@
             this.tb_giaban.Name = "tb_giaban";
             this.tb_giaban.Size = new System.Drawing.Size(112, 20);
             this.tb_giaban.TabIndex = 5;
+            this.tb_giaban.TextChanged += new System.EventHandler(this.tb_giaban_TextChanged);
             // 
             // label3
             // 
@@ -302,6 +269,7 @@
             this.label3.Size = new System.Drawing.Size(83, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Giá bán :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tb_soluongton
             // 
@@ -310,6 +278,7 @@
             this.tb_soluongton.Name = "tb_soluongton";
             this.tb_soluongton.Size = new System.Drawing.Size(112, 20);
             this.tb_soluongton.TabIndex = 3;
+            this.tb_soluongton.TextChanged += new System.EventHandler(this.tb_soluongton_TextChanged);
             // 
             // tb_tenhang
             // 
@@ -329,6 +298,7 @@
             this.label2.Size = new System.Drawing.Size(121, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số lượng tồn :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -339,6 +309,7 @@
             this.label1.Size = new System.Drawing.Size(97, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên hàng :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // iM22DataSet1
             // 
@@ -349,6 +320,11 @@
             // 
             this.nhapHangHoasBindingSource1.DataMember = "NhapHangHoas";
             this.nhapHangHoasBindingSource1.DataSource = this.iM22DataSet1;
+            this.nhapHangHoasBindingSource1.CurrentChanged += new System.EventHandler(this.nhapHangHoasBindingSource1_CurrentChanged);
+            // 
+            // inHoaDonsTableAdapter1
+            // 
+            this.inHoaDonsTableAdapter1.ClearBeforeFill = true;
             // 
             // formBanHang
             // 
@@ -385,10 +361,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label cb_loaihang;
-        private System.Windows.Forms.TextBox tb_tongtien;
-        private System.Windows.Forms.TextBox tb_slmua;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_giaban;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_soluongton;
@@ -407,5 +379,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienBanDataGridViewTextBoxColumn;
         private IM22DataSet iM22DataSet1;
         private System.Windows.Forms.BindingSource nhapHangHoasBindingSource1;
+        private IM22DataSetTableAdapters.inHoaDonsTableAdapter inHoaDonsTableAdapter1;
     }
 }

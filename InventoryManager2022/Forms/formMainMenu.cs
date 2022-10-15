@@ -37,7 +37,7 @@ namespace InventoryManager2022
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
         }
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             //open only form
             if (formOpen != null)
@@ -53,17 +53,21 @@ namespace InventoryManager2022
             panelShow.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-           // lb_choosed.Text = childForm.Text;
+            if (loginForm1.pAdmin == 0) bt_quanlinhanvien.Enabled = false;
+            // lb_choosed.Text = childForm.Text;
         }
         //method
         private void tuyChinhMenu()
         {
             panelSubHangHoa.Visible = false;
+            panelSubNhanVien.Visible = false;
         }
         private void anMenuCon()
         {
             if (panelSubHangHoa.Visible == true)
                 panelSubHangHoa.Visible = false;
+            if (panelSubNhanVien.Visible == true)
+                panelSubNhanVien.Visible = false;
 
         }
         private void hienMenuCon(Panel menuCon)
@@ -126,31 +130,54 @@ namespace InventoryManager2022
 
         private void btn_nhanvien_Click(object sender, EventArgs e)
         {
-            daNhanNut(sender, RGBColors.color3);
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formBanHang());
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formHangHoa());
+            OpenChildForm(new formBanHang());
         }
 
         private void formMainMenu_Load(object sender, EventArgs e)
         {
             OpenChildForm(new formThongKe());
             WindowState = FormWindowState.Maximized;
+            lb_xinchao.Text = loginForm1.pUser;
         }
 
         private void btn_nhanvien_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new formNhanVien());
+            daNhanNut(sender, RGBColors.color3);
+            hienMenuCon(panelSubNhanVien);
         }
 
         private void panelShow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bt_quanlinhanvien_Click(object sender, EventArgs e)
+        {
+            
+            OpenChildForm(new formNhanVien());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formHangHoa());
+        }
+
+        private void btn_xemhoadon_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formXemHoaDon());
+        }
+
+        private void lb_name_Click(object sender, EventArgs e)
         {
 
         }

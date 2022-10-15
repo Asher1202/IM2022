@@ -21,6 +21,7 @@ namespace InventoryManager2022.Forms
 
         private void formNhanVien_Load(object sender, EventArgs e)
         {
+
             // TODO: This line of code loads data into the 'iM22DataSet.NhanVienInfoes' table. You can move, or remove it, as needed.
             this.nhanVienInfoesTableAdapter.Fill(this.iM22DataSet.NhanVienInfoes);
             using (HangHoaModelContext db = new HangHoaModelContext())
@@ -92,123 +93,29 @@ namespace InventoryManager2022.Forms
             {
                 using (HangHoaModelContext db = new HangHoaModelContext())
                 {
-                    NhapHangHoa obj = nhapHangHoasBindingSource.Current as NhapHangHoa;
+                    NhanVienInfo obj = nhanVienInfoesBindingSource.Current as NhanVienInfo;
                     if (obj != null)
                     {
-                        if (db.Entry<NhapHangHoa>(obj).State ==
+                        if (db.Entry<NhanVienInfo>(obj).State ==
                         System.Data.Entity.EntityState.Detached)
                         {
-                            db.Set<NhapHangHoa>().Attach(obj);
+                            db.Set<NhanVienInfo>().Attach(obj);
                         }
-                        db.Entry<NhapHangHoa>(obj).State =
+                        db.Entry<NhanVienInfo>(obj).State =
                         System.Data.Entity.EntityState.Deleted;
                         db.SaveChanges();
                         MessageBox.Show(this, "Xóa thành công");
-                        nhapHangHoasBindingSource.RemoveCurrent();
+                        nhanVienInfoesBindingSource.RemoveCurrent();
 
                     }
                 }
             }
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void bt_sua_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void nhapHangHoasBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void lb_sdt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_namsinh_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gb_ThongTin_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_email_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cb_loaihanghoa_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_soluongnhap_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_tenhanghoa_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_chucvu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_tennhanvien_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_manv_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nhanVienInfoesBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iM22DataSetBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
+            gb_ThongTin.Enabled = true;
+            btn_remove.Enabled = false;
+            btn_save.Enabled = true;
         }
     }
 }
