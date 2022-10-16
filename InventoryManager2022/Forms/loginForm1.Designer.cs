@@ -67,9 +67,9 @@
             this.panel1.Controls.Add(this.txtUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 554);
+            this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox4
@@ -77,9 +77,9 @@
             this.pictureBox4.BackColor = System.Drawing.Color.ForestGreen;
             this.pictureBox4.Image = global::InventoryManager2022.Properties.Resources.bach_hoa_xanh_logo_02_06_2020_200x200_2;
             this.pictureBox4.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(469, 526);
+            this.pictureBox4.Size = new System.Drawing.Size(352, 427);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
@@ -88,10 +88,10 @@
             // 
             this.chekSee.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chekSee.AutoSize = true;
-            this.chekSee.Location = new System.Drawing.Point(865, 367);
-            this.chekSee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chekSee.Location = new System.Drawing.Point(649, 297);
+            this.chekSee.Margin = new System.Windows.Forms.Padding(2);
             this.chekSee.Name = "chekSee";
-            this.chekSee.Size = new System.Drawing.Size(114, 20);
+            this.chekSee.Size = new System.Drawing.Size(95, 17);
             this.chekSee.TabIndex = 16;
             this.chekSee.Text = "Hiện mật khẩu";
             this.chekSee.UseVisualStyleBackColor = true;
@@ -103,14 +103,13 @@
             this.btnExit.BackColor = System.Drawing.Color.ForestGreen;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnExit.Location = new System.Drawing.Point(819, 421);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Location = new System.Drawing.Point(614, 341);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(164, 57);
+            this.btnExit.Size = new System.Drawing.Size(123, 46);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnlogin
             // 
@@ -118,10 +117,10 @@
             this.btnlogin.BackColor = System.Drawing.Color.ForestGreen;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnlogin.Location = new System.Drawing.Point(627, 421);
-            this.btnlogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnlogin.Location = new System.Drawing.Point(470, 341);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(164, 57);
+            this.btnlogin.Size = new System.Drawing.Size(123, 46);
             this.btnlogin.TabIndex = 15;
             this.btnlogin.Text = "Đăng nhập";
             this.btnlogin.UseVisualStyleBackColor = false;
@@ -132,11 +131,11 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox2.Image = global::InventoryManager2022.Properties.Resources.lock_password_protect_safety_security_icon_1320086045132546966;
-            this.pictureBox2.Location = new System.Drawing.Point(544, 309);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(408, 250);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Size = new System.Drawing.Size(39, 37);
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -146,11 +145,11 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox3.Image = global::InventoryManager2022.Properties.Resources.user_icon_150670;
-            this.pictureBox3.Location = new System.Drawing.Point(544, 253);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(408, 205);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Size = new System.Drawing.Size(39, 37);
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Size = new System.Drawing.Size(29, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
@@ -160,10 +159,10 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Image = global::InventoryManager2022.Properties.Resources._0af3c9613761d2d2394d99312aeba397;
-            this.pictureBox1.Location = new System.Drawing.Point(624, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(468, 18);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 210);
+            this.pictureBox1.Size = new System.Drawing.Size(235, 171);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -174,13 +173,13 @@
             this.txtPass.BackColor = System.Drawing.SystemColors.Control;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(583, 309);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPass.Location = new System.Drawing.Point(437, 250);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPass.Size = new System.Drawing.Size(444, 37);
+            this.txtPass.Size = new System.Drawing.Size(333, 30);
             this.txtPass.TabIndex = 9;
             // 
             // txtUser
@@ -189,12 +188,12 @@
             this.txtUser.BackColor = System.Drawing.SystemColors.Control;
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(583, 253);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUser.Location = new System.Drawing.Point(437, 205);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtUser.Size = new System.Drawing.Size(444, 37);
+            this.txtUser.Size = new System.Drawing.Size(333, 30);
             this.txtUser.TabIndex = 8;
             // 
             // bindingSource1
@@ -214,11 +213,10 @@
             // 
             // loginForm1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "loginForm1";
             this.Text = "loginForm1";
             this.Load += new System.EventHandler(this.loginForm1_Load);

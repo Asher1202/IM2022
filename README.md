@@ -8,8 +8,8 @@
 - [x] Form quản lí nhân viên.
 - [x] Form bán hàng.
 - [x] Form xem hóa đơn.
-- [x] Form xuất hóa đơn.
-
+- [x] Form xuất hóa đơn
+-
 ** Inventory Management **
 - [x] Thêm, xóa, quản lí tất cả mặt hàng.
 - [x] Thống kê số tiền đã bán được.

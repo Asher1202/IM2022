@@ -154,16 +154,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="IM22DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IM22DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="IM22DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IM22DataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,28 +209,6 @@
     </None>
     <None Include="IM22DataSet.xss">
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="IM22DataSet1.xsc">
-      <DependentUpon>IM22DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="IM22DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IM22DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="IM22DataSet1.xss">
-      <DependentUpon>IM22DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="IM22DataSet2.xsc">
-      <DependentUpon>IM22DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="IM22DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IM22DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="IM22DataSet2.xss">
-      <DependentUpon>IM22DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\IM22DataSet.inHoaDonsDataTable.datasource" />

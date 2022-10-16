@@ -99,20 +99,18 @@
             // tb_tenkhach
             // 
             this.tb_tenkhach.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "TenHang", true));
-            this.tb_tenkhach.Location = new System.Drawing.Point(185, 16);
-            this.tb_tenkhach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tenkhach.Location = new System.Drawing.Point(139, 13);
             this.tb_tenkhach.Name = "tb_tenkhach";
-            this.tb_tenkhach.Size = new System.Drawing.Size(148, 22);
+            this.tb_tenkhach.Size = new System.Drawing.Size(112, 20);
             this.tb_tenkhach.TabIndex = 2;
             // 
             // lb_tenkhach
             // 
             this.lb_tenkhach.AutoSize = true;
             this.lb_tenkhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.lb_tenkhach.Location = new System.Drawing.Point(16, 11);
-            this.lb_tenkhach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_tenkhach.Location = new System.Drawing.Point(12, 9);
             this.lb_tenkhach.Name = "lb_tenkhach";
-            this.lb_tenkhach.Size = new System.Drawing.Size(137, 29);
+            this.lb_tenkhach.Size = new System.Drawing.Size(105, 22);
             this.lb_tenkhach.TabIndex = 0;
             this.lb_tenkhach.Text = "Tên khách :";
             // 
@@ -125,9 +123,8 @@
             this.panel1.Controls.Add(this.lb_tenkhach);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 187);
+            this.panel1.Size = new System.Drawing.Size(800, 152);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -139,10 +136,9 @@
             this.bt_xuathoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_xuathoadon.IconSize = 30;
             this.bt_xuathoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_xuathoadon.Location = new System.Drawing.Point(791, 117);
-            this.bt_xuathoadon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt_xuathoadon.Location = new System.Drawing.Point(593, 95);
             this.bt_xuathoadon.Name = "bt_xuathoadon";
-            this.bt_xuathoadon.Size = new System.Drawing.Size(179, 44);
+            this.bt_xuathoadon.Size = new System.Drawing.Size(134, 36);
             this.bt_xuathoadon.TabIndex = 13;
             this.bt_xuathoadon.Text = "     &Xuất hóa đơn";
             this.bt_xuathoadon.UseVisualStyleBackColor = true;
@@ -156,10 +152,9 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(640, 117);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Location = new System.Drawing.Point(480, 95);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(143, 44);
+            this.iconButton1.Size = new System.Drawing.Size(107, 36);
             this.iconButton1.TabIndex = 12;
             this.iconButton1.Text = "   &Tìm kiếm";
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -177,16 +172,13 @@
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1067, 554);
+            this.panel3.Size = new System.Drawing.Size(800, 450);
             this.panel3.TabIndex = 7;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderIDDataGridViewTextBoxColumn,
@@ -200,11 +192,9 @@
             this.giatienDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.inHoaDonsBindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 187);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 152);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1067, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 298);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -212,7 +202,6 @@
             // 
             this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "orderID";
             this.orderIDDataGridViewTextBoxColumn.HeaderText = "orderID";
-            this.orderIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
             this.orderIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -220,56 +209,48 @@
             // 
             this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "customerID";
             this.customerIDDataGridViewTextBoxColumn.HeaderText = "customerID";
-            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
             // 
             // quantityDataGridViewTextBoxColumn
             // 
             this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
             this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
-            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             // 
             // diachiDataGridViewTextBoxColumn
             // 
             this.diachiDataGridViewTextBoxColumn.DataPropertyName = "diachi";
             this.diachiDataGridViewTextBoxColumn.HeaderText = "diachi";
-            this.diachiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diachiDataGridViewTextBoxColumn.Name = "diachiDataGridViewTextBoxColumn";
             // 
             // phoneDataGridViewTextBoxColumn
             // 
             this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
             this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
-            this.phoneDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             // 
             // staticidDataGridViewTextBoxColumn
             // 
             this.staticidDataGridViewTextBoxColumn.DataPropertyName = "staticid";
             this.staticidDataGridViewTextBoxColumn.HeaderText = "staticid";
-            this.staticidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.staticidDataGridViewTextBoxColumn.Name = "staticidDataGridViewTextBoxColumn";
             // 
             // dateDataGridViewTextBoxColumn
             // 
             this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
             this.dateDataGridViewTextBoxColumn.HeaderText = "date";
-            this.dateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             // 
             // hangmuaDataGridViewTextBoxColumn
             // 
             this.hangmuaDataGridViewTextBoxColumn.DataPropertyName = "hangmua";
             this.hangmuaDataGridViewTextBoxColumn.HeaderText = "hangmua";
-            this.hangmuaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hangmuaDataGridViewTextBoxColumn.Name = "hangmuaDataGridViewTextBoxColumn";
             // 
             // giatienDataGridViewTextBoxColumn
             // 
             this.giatienDataGridViewTextBoxColumn.DataPropertyName = "giatien";
             this.giatienDataGridViewTextBoxColumn.HeaderText = "giatien";
-            this.giatienDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.giatienDataGridViewTextBoxColumn.Name = "giatienDataGridViewTextBoxColumn";
             // 
             // inHoaDonsBindingSource1
@@ -301,11 +282,10 @@
             // 
             // formXemHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formXemHoaDon";
             this.Text = "formXemHoaDon";
             this.Load += new System.EventHandler(this.formXemHoaDon_Load);
