@@ -42,7 +42,6 @@
             this.nhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soTienBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_thanhtoan = new FontAwesome.Sharp.IconButton();
@@ -122,7 +121,6 @@
             this.nhaCungCapDataGridViewTextBoxColumn,
             this.loaiHangHoaDataGridViewTextBoxColumn,
             this.soTienDataGridViewTextBoxColumn,
-            this.idDataGridViewTextBoxColumn,
             this.soTienBanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.nhapHangHoasBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -137,43 +135,37 @@
             // tenHangDataGridViewTextBoxColumn
             // 
             this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
-            this.tenHangDataGridViewTextBoxColumn.HeaderText = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.HeaderText = "Tên hàng";
             this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
             // 
             // soLuongNhapDataGridViewTextBoxColumn
             // 
             this.soLuongNhapDataGridViewTextBoxColumn.DataPropertyName = "SoLuongNhap";
-            this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "SoLuongNhap";
+            this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "Số lượng nhập";
             this.soLuongNhapDataGridViewTextBoxColumn.Name = "soLuongNhapDataGridViewTextBoxColumn";
             // 
             // nhaCungCapDataGridViewTextBoxColumn
             // 
             this.nhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "NhaCungCap";
-            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "Nhà cung cấp";
             this.nhaCungCapDataGridViewTextBoxColumn.Name = "nhaCungCapDataGridViewTextBoxColumn";
             // 
             // loaiHangHoaDataGridViewTextBoxColumn
             // 
             this.loaiHangHoaDataGridViewTextBoxColumn.DataPropertyName = "LoaiHangHoa";
-            this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "LoaiHangHoa";
+            this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "Loại hàng";
             this.loaiHangHoaDataGridViewTextBoxColumn.Name = "loaiHangHoaDataGridViewTextBoxColumn";
             // 
             // soTienDataGridViewTextBoxColumn
             // 
             this.soTienDataGridViewTextBoxColumn.DataPropertyName = "SoTien";
-            this.soTienDataGridViewTextBoxColumn.HeaderText = "SoTien";
+            this.soTienDataGridViewTextBoxColumn.HeaderText = "Số tiền nhập";
             this.soTienDataGridViewTextBoxColumn.Name = "soTienDataGridViewTextBoxColumn";
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
             // soTienBanDataGridViewTextBoxColumn
             // 
             this.soTienBanDataGridViewTextBoxColumn.DataPropertyName = "SoTienBan";
-            this.soTienBanDataGridViewTextBoxColumn.HeaderText = "SoTienBan";
+            this.soTienBanDataGridViewTextBoxColumn.HeaderText = "Số tiền bán";
             this.soTienBanDataGridViewTextBoxColumn.Name = "soTienBanDataGridViewTextBoxColumn";
             // 
             // panel1
@@ -257,7 +249,8 @@
             this.tb_giaban.Location = new System.Drawing.Point(139, 78);
             this.tb_giaban.Name = "tb_giaban";
             this.tb_giaban.Size = new System.Drawing.Size(112, 20);
-            this.tb_giaban.TabIndex = 5;
+            this.tb_giaban.TabIndex = 3;
+            this.tb_giaban.TabStop = false;
             this.tb_giaban.TextChanged += new System.EventHandler(this.tb_giaban_TextChanged);
             // 
             // label3
@@ -277,7 +270,7 @@
             this.tb_soluongton.Location = new System.Drawing.Point(139, 44);
             this.tb_soluongton.Name = "tb_soluongton";
             this.tb_soluongton.Size = new System.Drawing.Size(112, 20);
-            this.tb_soluongton.TabIndex = 3;
+            this.tb_soluongton.TabIndex = 2;
             this.tb_soluongton.TextChanged += new System.EventHandler(this.tb_soluongton_TextChanged);
             // 
             // tb_tenhang
@@ -286,7 +279,7 @@
             this.tb_tenhang.Location = new System.Drawing.Point(139, 13);
             this.tb_tenhang.Name = "tb_tenhang";
             this.tb_tenhang.Size = new System.Drawing.Size(112, 20);
-            this.tb_tenhang.TabIndex = 2;
+            this.tb_tenhang.TabIndex = 1;
             this.tb_tenhang.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
@@ -370,15 +363,14 @@
         private FontAwesome.Sharp.IconButton bt_thanhtoan;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private IM22DataSet iM22DataSet1;
+        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource1;
+        private IM22DataSetTableAdapters.inHoaDonsTableAdapter inHoaDonsTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenHangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongNhapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nhaCungCapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiHangHoaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienBanDataGridViewTextBoxColumn;
-        private IM22DataSet iM22DataSet1;
-        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource1;
-        private IM22DataSetTableAdapters.inHoaDonsTableAdapter inHoaDonsTableAdapter1;
     }
 }

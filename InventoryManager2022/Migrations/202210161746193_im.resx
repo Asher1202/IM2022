@@ -117,25 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="nhapHangHoasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>763, 17</value>
-  </metadata>
-  <metadata name="nhapHangHoasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>763, 17</value>
-  </metadata>
-  <metadata name="iM22DataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>978, 17</value>
-  </metadata>
-  <metadata name="iM22DataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>978, 17</value>
-  </metadata>
-  <metadata name="iM22DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1178, 17</value>
-  </metadata>
-  <metadata name="iM22DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1178, 17</value>
-  </metadata>
-  <metadata name="nhapHangHoasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>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</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>

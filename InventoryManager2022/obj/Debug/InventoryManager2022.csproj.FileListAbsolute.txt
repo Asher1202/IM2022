@@ -34,7 +34,6 @@ C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\EntityFramewor
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formHangHoa.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formNhanVien.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formBanHang.resources
-C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formQLHang.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formPrintInvoice.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
@@ -90,3 +89,4 @@ C:\Users\rainb\source\repos\IM2022\InventoryManager2022\bin\Debug\zh-CHT\Microso
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.loginForm1.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formXemHoaDon.resources
 C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Forms.formThanhToan.resources
+C:\Users\rainb\source\repos\IM2022\InventoryManager2022\obj\Debug\InventoryManager2022.Migrations.im.resources

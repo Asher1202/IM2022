@@ -53,11 +53,22 @@
           <DataField>giatien</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="MaNV">
+          <DataField>MaNV</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="loaihangmua">
+          <DataField>loaihangmua</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>InventoryManager2022</rd:DataSetName>
-        <rd:TableName>inHoaDonsDataTable</rd:TableName>
-        <rd:ObjectDataSourceType>InventoryManager2022.IM22DataSet+inHoaDonsDataTable, IM22DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:DataSetName>IM22DataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\rainb\source\repos\IM2022\InventoryManager2022\IM22DataSet.xsd</rd:SchemaPath>
+        <rd:TableName>inHoaDons</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>inHoaDonsTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -654,7 +665,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!giatien.Value</Value>
-                    <Style />
+                    <Style>
+                      <Format>0.00'VND';(0.00'VND')</Format>
+                    </Style>
                   </TextRun>
                   <TextRun>
                     <Value>VNĐ</Value>
@@ -670,6 +683,40 @@
             <Height>0.25in</Height>
             <Width>1in</Width>
             <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox12">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nhân viên thanh toán :</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!MaNV.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox11</rd:DefaultName>
+            <Top>1.48958in</Top>
+            <Left>3.25223in</Left>
+            <Height>0.25in</Height>
+            <Width>2.47in</Width>
+            <ZIndex>13</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>

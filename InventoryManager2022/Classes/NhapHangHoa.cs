@@ -22,6 +22,6 @@ namespace InventoryManager2022
 
         public string SoTien { get; set; }
         public string SoTienBan { get; set; }
-
+        public int SoLuongBan { get; set; }
     }
 }

@@ -52,7 +52,17 @@ namespace InventoryManager2022.Forms
                         db.Entry<inHoaDon>(obj).State =
                         System.Data.Entity.EntityState.Modified;
                     }
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-9HKHU3U;Initial Catalog=IM22;Integrated Security=True");
+                    con.Open();
 
+
+                    
+
+                    int left = int.Parse(formBanHang.ttSoLuong)- int.Parse(tb_slmua.Text);
+                    string s = "UPDATE NhapHangHoas SET SoLuongNhap = '" + left + "'WHERE TenHang = N'" + tb_sphammua.Text + "'";
+                    SqlCommand cmd = new SqlCommand(s,con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
                     db.SaveChanges();
                     formMainMenu fmm = new formMainMenu();
                     fmm.OpenChildForm(new formThongKe());
@@ -80,8 +90,9 @@ namespace InventoryManager2022.Forms
         }
         private void formKhachHang_Load(object sender, EventArgs e)
         {
-
             
+
+
             using (HangHoaModelContext db = new HangHoaModelContext())
             {
                 inHoaDonsBindingSource.DataSource = db.inHoaDonInfos.ToList();
@@ -95,6 +106,7 @@ namespace InventoryManager2022.Forms
             tb_sphammua.Text = formBanHang.ttTenKhach;
             tb_loaihangmua.Text = formBanHang.TTLoaiHang;
             dateTimePicker1.Value = DateTime.Now;
+            tb_manv.Text = loginForm1.pMaNV;
             inHoaDonsBindingSource.EndEdit();
             //dateTimePicker1.Text = DateTime.Now.ToLongDateString();
 
@@ -137,11 +149,11 @@ namespace InventoryManager2022.Forms
             
             tb_tongtien.Text = (int.Parse(tb_slmua.Text) * int.Parse(formBanHang.ttGiaBan)).ToString();
             inHoaDonsBindingSource.EndEdit();
-/*            if (int.Parse(formBanHang.ttSoLuong) - int.Parse(tb_slmua.Text) < 1)
+            if (int.Parse(formBanHang.ttSoLuong) - int.Parse(tb_slmua.Text) < 1)
             {
                 MessageBox.Show("Khách hàng không thể mua hàng với số lượng này");
                 return;
-            }*/
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

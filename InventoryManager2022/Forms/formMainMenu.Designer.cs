@@ -243,7 +243,7 @@
             // 
             this.lb_name.AutoSize = true;
             this.lb_name.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_name.Location = new System.Drawing.Point(490, 0);
+            this.lb_name.Location = new System.Drawing.Point(513, 0);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(56, 13);
             this.lb_name.TabIndex = 3;
@@ -254,11 +254,12 @@
             // 
             this.lb_xinchao.AutoSize = true;
             this.lb_xinchao.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_xinchao.Location = new System.Drawing.Point(546, 0);
+            this.lb_xinchao.Location = new System.Drawing.Point(569, 0);
             this.lb_xinchao.Name = "lb_xinchao";
-            this.lb_xinchao.Size = new System.Drawing.Size(55, 13);
+            this.lb_xinchao.Size = new System.Drawing.Size(32, 13);
             this.lb_xinchao.TabIndex = 2;
-            this.lb_xinchao.Text = "Xin chào :";
+            this.lb_xinchao.Text = "Tên :";
+            this.lb_xinchao.Click += new System.EventHandler(this.lb_xinchao_Click);
             // 
             // lb_choosed
             // 

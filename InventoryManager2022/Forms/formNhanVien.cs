@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -18,7 +19,11 @@ namespace InventoryManager2022.Forms
         {
             InitializeComponent();
         }
-
+        //method
+        public bool CheckEmail(string em) //hàm regex check email
+        {
+            return Regex.IsMatch(em, @"^[a-zA-Z0-9_.]{3,20}@gmail.com(.vn|)$");
+        }
         private void formNhanVien_Load(object sender, EventArgs e)
         {
 
@@ -79,7 +84,7 @@ namespace InventoryManager2022.Forms
 
                     dataGridView1.Refresh();
                     btn_add.Enabled = true;
-                    btn_remove.Enabled = true;
+                    btn_remove.Enabled = false;
                     btn_save.Enabled = false;
                     gb_ThongTin.Enabled = false;
 
@@ -116,6 +121,17 @@ namespace InventoryManager2022.Forms
             gb_ThongTin.Enabled = true;
             btn_remove.Enabled = false;
             btn_save.Enabled = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string email = tb_email.Text;
+            if (!CheckEmail(email)) { MessageBox.Show("Định dạng email không đúng! Vui lòng nhập lại!"); return; }
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btn_remove.Enabled = true;
         }
     }
 }

@@ -181,5 +181,10 @@ namespace InventoryManager2022
         {
 
         }
+
+        private void lb_xinchao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

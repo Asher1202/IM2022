@@ -84,7 +84,7 @@ namespace InventoryManager2022.Forms
             ttTenKhach = row.Cells[0].Value.ToString();
             ttSoLuong = row.Cells[1].Value.ToString();
             TTLoaiHang = row.Cells[3].Value.ToString();
-            ttGiaBan = row.Cells[6].Value.ToString();
+            ttGiaBan = row.Cells[5].Value.ToString();
 
             
 

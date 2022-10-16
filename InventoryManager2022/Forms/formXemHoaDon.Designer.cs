@@ -29,76 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.nhapHangHoasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.iM22DataSet1 = new InventoryManager2022.IM22DataSet();
-            this.nhapHangHoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iM22DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iM22DataSet = new InventoryManager2022.IM22DataSet();
             this.tb_tenkhach = new System.Windows.Forms.TextBox();
             this.lb_tenkhach = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_xuathoadon = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.nhapHangHoasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hangmuaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaihangmuaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diachiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.staticidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hangmuaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giatienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inHoaDonsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.nhapHangHoasTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhapHangHoasTableAdapter();
-            this.nhanVienInfoesTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhanVienInfoesTableAdapter();
-            this.nhanVienInfoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inHoaDonsTableAdapter1 = new InventoryManager2022.IM22DataSetTableAdapters.inHoaDonsTableAdapter();
+            this.maNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inHoaDonsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).BeginInit();
+            this.iM22DataSet = new InventoryManager2022.IM22DataSet();
+            this.inHoaDonsTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.inHoaDonsTableAdapter();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inHoaDonsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inHoaDonsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // nhapHangHoasBindingSource1
-            // 
-            this.nhapHangHoasBindingSource1.DataMember = "NhapHangHoas";
-            this.nhapHangHoasBindingSource1.DataSource = this.iM22DataSet1;
-            // 
-            // iM22DataSet1
-            // 
-            this.iM22DataSet1.DataSetName = "IM22DataSet";
-            this.iM22DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nhapHangHoasBindingSource
-            // 
-            this.nhapHangHoasBindingSource.DataMember = "NhapHangHoas";
-            this.nhapHangHoasBindingSource.DataSource = this.iM22DataSetBindingSource;
-            // 
-            // iM22DataSetBindingSource
-            // 
-            this.iM22DataSetBindingSource.DataSource = this.iM22DataSet;
-            this.iM22DataSetBindingSource.Position = 0;
-            // 
-            // iM22DataSet
-            // 
-            this.iM22DataSet.DataSetName = "IM22DataSet";
-            this.iM22DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tb_tenkhach
             // 
-            this.tb_tenkhach.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "TenHang", true));
             this.tb_tenkhach.Location = new System.Drawing.Point(139, 13);
             this.tb_tenkhach.Name = "tb_tenkhach";
             this.tb_tenkhach.Size = new System.Drawing.Size(112, 20);
@@ -160,11 +119,6 @@
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // nhapHangHoasBindingSource2
-            // 
-            this.nhapHangHoasBindingSource2.DataMember = "NhapHangHoas";
-            this.nhapHangHoasBindingSource2.DataSource = this.iM22DataSetBindingSource;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
@@ -182,103 +136,97 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderIDDataGridViewTextBoxColumn,
+            this.hangmuaDataGridViewTextBoxColumn,
+            this.loaihangmuaDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn,
             this.quantityDataGridViewTextBoxColumn,
             this.diachiDataGridViewTextBoxColumn,
             this.phoneDataGridViewTextBoxColumn,
-            this.staticidDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
-            this.hangmuaDataGridViewTextBoxColumn,
-            this.giatienDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.inHoaDonsBindingSource1;
+            this.giatienDataGridViewTextBoxColumn,
+            this.maNVDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.inHoaDonsBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 152);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(800, 298);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // orderIDDataGridViewTextBoxColumn
             // 
             this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "orderID";
-            this.orderIDDataGridViewTextBoxColumn.HeaderText = "orderID";
+            this.orderIDDataGridViewTextBoxColumn.HeaderText = "Mã hóa đơn";
             this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
             this.orderIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hangmuaDataGridViewTextBoxColumn
+            // 
+            this.hangmuaDataGridViewTextBoxColumn.DataPropertyName = "hangmua";
+            this.hangmuaDataGridViewTextBoxColumn.HeaderText = "Tên hàng";
+            this.hangmuaDataGridViewTextBoxColumn.Name = "hangmuaDataGridViewTextBoxColumn";
+            // 
+            // loaihangmuaDataGridViewTextBoxColumn
+            // 
+            this.loaihangmuaDataGridViewTextBoxColumn.DataPropertyName = "loaihangmua";
+            this.loaihangmuaDataGridViewTextBoxColumn.HeaderText = "Loại hàng mua";
+            this.loaihangmuaDataGridViewTextBoxColumn.Name = "loaihangmuaDataGridViewTextBoxColumn";
             // 
             // customerIDDataGridViewTextBoxColumn
             // 
             this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "customerID";
-            this.customerIDDataGridViewTextBoxColumn.HeaderText = "customerID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "Tên khách hàng";
             this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
             // 
             // quantityDataGridViewTextBoxColumn
             // 
             this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Số lượng mua";
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             // 
             // diachiDataGridViewTextBoxColumn
             // 
             this.diachiDataGridViewTextBoxColumn.DataPropertyName = "diachi";
-            this.diachiDataGridViewTextBoxColumn.HeaderText = "diachi";
+            this.diachiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
             this.diachiDataGridViewTextBoxColumn.Name = "diachiDataGridViewTextBoxColumn";
             // 
             // phoneDataGridViewTextBoxColumn
             // 
             this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
-            // staticidDataGridViewTextBoxColumn
-            // 
-            this.staticidDataGridViewTextBoxColumn.DataPropertyName = "staticid";
-            this.staticidDataGridViewTextBoxColumn.HeaderText = "staticid";
-            this.staticidDataGridViewTextBoxColumn.Name = "staticidDataGridViewTextBoxColumn";
             // 
             // dateDataGridViewTextBoxColumn
             // 
             this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Ngày mua";
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // hangmuaDataGridViewTextBoxColumn
-            // 
-            this.hangmuaDataGridViewTextBoxColumn.DataPropertyName = "hangmua";
-            this.hangmuaDataGridViewTextBoxColumn.HeaderText = "hangmua";
-            this.hangmuaDataGridViewTextBoxColumn.Name = "hangmuaDataGridViewTextBoxColumn";
             // 
             // giatienDataGridViewTextBoxColumn
             // 
             this.giatienDataGridViewTextBoxColumn.DataPropertyName = "giatien";
-            this.giatienDataGridViewTextBoxColumn.HeaderText = "giatien";
+            this.giatienDataGridViewTextBoxColumn.HeaderText = "Gía tiền";
             this.giatienDataGridViewTextBoxColumn.Name = "giatienDataGridViewTextBoxColumn";
             // 
-            // inHoaDonsBindingSource1
+            // maNVDataGridViewTextBoxColumn
             // 
-            this.inHoaDonsBindingSource1.DataMember = "inHoaDons";
-            this.inHoaDonsBindingSource1.DataSource = this.iM22DataSetBindingSource;
-            // 
-            // nhapHangHoasTableAdapter
-            // 
-            this.nhapHangHoasTableAdapter.ClearBeforeFill = true;
-            // 
-            // nhanVienInfoesTableAdapter
-            // 
-            this.nhanVienInfoesTableAdapter.ClearBeforeFill = true;
-            // 
-            // nhanVienInfoesBindingSource
-            // 
-            this.nhanVienInfoesBindingSource.DataMember = "NhanVienInfoes";
-            this.nhanVienInfoesBindingSource.DataSource = this.iM22DataSetBindingSource;
-            // 
-            // inHoaDonsTableAdapter1
-            // 
-            this.inHoaDonsTableAdapter1.ClearBeforeFill = true;
+            this.maNVDataGridViewTextBoxColumn.DataPropertyName = "MaNV";
+            this.maNVDataGridViewTextBoxColumn.HeaderText = "Nhân viên";
+            this.maNVDataGridViewTextBoxColumn.Name = "maNVDataGridViewTextBoxColumn";
             // 
             // inHoaDonsBindingSource
             // 
             this.inHoaDonsBindingSource.DataMember = "inHoaDons";
-            this.inHoaDonsBindingSource.DataSource = this.iM22DataSetBindingSource;
+            this.inHoaDonsBindingSource.DataSource = this.iM22DataSet;
+            // 
+            // iM22DataSet
+            // 
+            this.iM22DataSet.DataSetName = "IM22DataSet";
+            this.iM22DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inHoaDonsTableAdapter
+            // 
+            this.inHoaDonsTableAdapter.ClearBeforeFill = true;
             // 
             // formXemHoaDon
             // 
@@ -289,52 +237,36 @@
             this.Name = "formXemHoaDon";
             this.Text = "formXemHoaDon";
             this.Load += new System.EventHandler(this.formXemHoaDon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource2)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inHoaDonsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inHoaDonsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource1;
-        private IM22DataSet iM22DataSet1;
         private FontAwesome.Sharp.IconButton bt_xuathoadon;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource;
-        private System.Windows.Forms.BindingSource iM22DataSetBindingSource;
-        private IM22DataSet iM22DataSet;
         private System.Windows.Forms.TextBox tb_tenkhach;
         private System.Windows.Forms.Label lb_tenkhach;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private IM22DataSetTableAdapters.NhapHangHoasTableAdapter nhapHangHoasTableAdapter;
-        private IM22DataSetTableAdapters.NhanVienInfoesTableAdapter nhanVienInfoesTableAdapter;
-        private System.Windows.Forms.BindingSource nhanVienInfoesBindingSource;
-        private IM22DataSetTableAdapters.inHoaDonsTableAdapter inHoaDonsTableAdapter1;
-        private System.Windows.Forms.BindingSource inHoaDonsBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private IM22DataSet iM22DataSet;
+        private System.Windows.Forms.BindingSource inHoaDonsBindingSource;
+        private IM22DataSetTableAdapters.inHoaDonsTableAdapter inHoaDonsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hangmuaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaihangmuaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn diachiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn staticidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hangmuaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn giatienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource inHoaDonsBindingSource1;
-        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maNVDataGridViewTextBoxColumn;
     }
 }

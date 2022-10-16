@@ -15,9 +15,9 @@ namespace InventoryManager2022.Classes
 
         public string customerID { get; set; }
 
-        public string giatien { get; set; }
+        public double giatien { get; set; }
 
-        public string quantity { get; set; }
+        public int quantity { get; set; }
 
         public string diachi { get; set; }
         public string MaNV { get; set; }

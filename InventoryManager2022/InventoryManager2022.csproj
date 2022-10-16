@@ -131,12 +131,6 @@
       <DependentUpon>formThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\NhapHangHoa.cs" />
-    <Compile Include="Forms\formQLHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\formQLHang.Designer.cs">
-      <DependentUpon>formQLHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\formXemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +147,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IM22DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IM22DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210161746193_im.cs" />
+    <Compile Include="Migrations\202210161746193_im.designer.cs">
+      <DependentUpon>202210161746193_im.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -179,14 +182,14 @@
     <EmbeddedResource Include="Forms\formThongKe.resx">
       <DependentUpon>formThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\formQLHang.resx">
-      <DependentUpon>formQLHang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\formXemHoaDon.resx">
       <DependentUpon>formXemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\loginForm1.resx">
       <DependentUpon>loginForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210161746193_im.resx">
+      <DependentUpon>202210161746193_im.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,7 +201,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report\Report1.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
     <None Include="IM22DataSet.xsc">
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
     </None>
@@ -209,6 +212,17 @@
     </None>
     <None Include="IM22DataSet.xss">
       <DependentUpon>IM22DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IM22DataSet11.xsc">
+      <DependentUpon>IM22DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="IM22DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IM22DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IM22DataSet11.xss">
+      <DependentUpon>IM22DataSet11.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\IM22DataSet.inHoaDonsDataTable.datasource" />
@@ -227,6 +241,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Items\" />
+    <Folder Include="Report\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\0af3c9613761d2d2394d99312aeba397.gif" />

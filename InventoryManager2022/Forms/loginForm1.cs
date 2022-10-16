@@ -88,5 +88,12 @@ namespace InventoryManager2022.Forms
                 txtPass.PasswordChar = '*';
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }

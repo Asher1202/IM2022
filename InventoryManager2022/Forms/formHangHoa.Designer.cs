@@ -60,7 +60,6 @@
             this.nhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soTienBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nhapHangHoasTableAdapter = new InventoryManager2022.IM22DataSetTableAdapters.NhapHangHoasTableAdapter();
             this.gb_ThongTin.SuspendLayout();
@@ -106,7 +105,7 @@
             this.textBox1.Location = new System.Drawing.Point(163, 283);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 31);
-            this.textBox1.TabIndex = 14;
+            this.textBox1.TabIndex = 5;
             // 
             // nhapHangHoasBindingSource
             // 
@@ -140,7 +139,7 @@
             this.tb_sotien.Location = new System.Drawing.Point(163, 237);
             this.tb_sotien.Name = "tb_sotien";
             this.tb_sotien.Size = new System.Drawing.Size(160, 31);
-            this.tb_sotien.TabIndex = 12;
+            this.tb_sotien.TabIndex = 4;
             // 
             // lb_sotien
             // 
@@ -174,7 +173,7 @@
             this.tb_nhacungcap.Location = new System.Drawing.Point(163, 148);
             this.tb_nhacungcap.Name = "tb_nhacungcap";
             this.tb_nhacungcap.Size = new System.Drawing.Size(160, 31);
-            this.tb_nhacungcap.TabIndex = 6;
+            this.tb_nhacungcap.TabIndex = 3;
             // 
             // tb_soluongnhap
             // 
@@ -183,7 +182,7 @@
             this.tb_soluongnhap.Location = new System.Drawing.Point(163, 101);
             this.tb_soluongnhap.Name = "tb_soluongnhap";
             this.tb_soluongnhap.Size = new System.Drawing.Size(160, 31);
-            this.tb_soluongnhap.TabIndex = 5;
+            this.tb_soluongnhap.TabIndex = 2;
             // 
             // tb_tenhanghoa
             // 
@@ -192,7 +191,7 @@
             this.tb_tenhanghoa.Location = new System.Drawing.Point(163, 56);
             this.tb_tenhanghoa.Name = "tb_tenhanghoa";
             this.tb_tenhanghoa.Size = new System.Drawing.Size(160, 31);
-            this.tb_tenhanghoa.TabIndex = 4;
+            this.tb_tenhanghoa.TabIndex = 1;
             // 
             // lb_loaihanghoa
             // 
@@ -368,7 +367,6 @@
             this.nhaCungCapDataGridViewTextBoxColumn,
             this.loaiHangHoaDataGridViewTextBoxColumn,
             this.soTienDataGridViewTextBoxColumn,
-            this.idDataGridViewTextBoxColumn,
             this.soTienBanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.nhapHangHoasBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -386,37 +384,31 @@
             // soLuongNhapDataGridViewTextBoxColumn
             // 
             this.soLuongNhapDataGridViewTextBoxColumn.DataPropertyName = "SoLuongNhap";
-            this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "SoLuongNhap";
+            this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "Số lượng nhập";
             this.soLuongNhapDataGridViewTextBoxColumn.Name = "soLuongNhapDataGridViewTextBoxColumn";
             // 
             // nhaCungCapDataGridViewTextBoxColumn
             // 
             this.nhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "NhaCungCap";
-            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "Nhà cung cấp";
             this.nhaCungCapDataGridViewTextBoxColumn.Name = "nhaCungCapDataGridViewTextBoxColumn";
             // 
             // loaiHangHoaDataGridViewTextBoxColumn
             // 
             this.loaiHangHoaDataGridViewTextBoxColumn.DataPropertyName = "LoaiHangHoa";
-            this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "LoaiHangHoa";
+            this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "Loại hàng";
             this.loaiHangHoaDataGridViewTextBoxColumn.Name = "loaiHangHoaDataGridViewTextBoxColumn";
             // 
             // soTienDataGridViewTextBoxColumn
             // 
             this.soTienDataGridViewTextBoxColumn.DataPropertyName = "SoTien";
-            this.soTienDataGridViewTextBoxColumn.HeaderText = "SoTien";
+            this.soTienDataGridViewTextBoxColumn.HeaderText = "Số tiền";
             this.soTienDataGridViewTextBoxColumn.Name = "soTienDataGridViewTextBoxColumn";
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
             // soTienBanDataGridViewTextBoxColumn
             // 
             this.soTienBanDataGridViewTextBoxColumn.DataPropertyName = "SoTienBan";
-            this.soTienBanDataGridViewTextBoxColumn.HeaderText = "SoTienBan";
+            this.soTienBanDataGridViewTextBoxColumn.HeaderText = "Số tiền bán";
             this.soTienBanDataGridViewTextBoxColumn.Name = "soTienBanDataGridViewTextBoxColumn";
             // 
             // nhapHangHoasTableAdapter
@@ -480,7 +472,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nhaCungCapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiHangHoaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienBanDataGridViewTextBoxColumn;
     }
 }
