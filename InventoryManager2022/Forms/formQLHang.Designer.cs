@@ -36,8 +36,9 @@
             this.nhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiHangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soTienBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhapHangHoasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.iM22DataSet2 = new InventoryManager2022.IM22DataSet2();
             this.nhapHangHoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iM22DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iM22DataSet = new InventoryManager2022.IM22DataSet();
@@ -65,8 +66,11 @@
             this.gb_ThongTin = new System.Windows.Forms.GroupBox();
             this.btn_add = new FontAwesome.Sharp.IconButton();
             this.btn_remove = new FontAwesome.Sharp.IconButton();
+            this.nhapHangHoasTableAdapter1 = new InventoryManager2022.IM22DataSet2TableAdapters.NhapHangHoasTableAdapter();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).BeginInit();
@@ -79,9 +83,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(320, 0);
+            this.panel3.Location = new System.Drawing.Point(427, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(756, 583);
+            this.panel3.Size = new System.Drawing.Size(1008, 718);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -95,13 +100,13 @@
             this.nhaCungCapDataGridViewTextBoxColumn,
             this.loaiHangHoaDataGridViewTextBoxColumn,
             this.soTienDataGridViewTextBoxColumn,
-            this.idDataGridViewTextBoxColumn,
             this.soTienBanDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.nhapHangHoasBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.DataSource = this.nhapHangHoasBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(756, 583);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1008, 718);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -109,43 +114,59 @@
             // 
             this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
             this.tenHangDataGridViewTextBoxColumn.HeaderText = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
+            this.tenHangDataGridViewTextBoxColumn.Width = 159;
             // 
             // soLuongNhapDataGridViewTextBoxColumn
             // 
             this.soLuongNhapDataGridViewTextBoxColumn.DataPropertyName = "SoLuongNhap";
             this.soLuongNhapDataGridViewTextBoxColumn.HeaderText = "SoLuongNhap";
+            this.soLuongNhapDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.soLuongNhapDataGridViewTextBoxColumn.Name = "soLuongNhapDataGridViewTextBoxColumn";
+            this.soLuongNhapDataGridViewTextBoxColumn.Width = 159;
             // 
             // nhaCungCapDataGridViewTextBoxColumn
             // 
             this.nhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "NhaCungCap";
             this.nhaCungCapDataGridViewTextBoxColumn.HeaderText = "NhaCungCap";
+            this.nhaCungCapDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nhaCungCapDataGridViewTextBoxColumn.Name = "nhaCungCapDataGridViewTextBoxColumn";
+            this.nhaCungCapDataGridViewTextBoxColumn.Width = 160;
             // 
             // loaiHangHoaDataGridViewTextBoxColumn
             // 
             this.loaiHangHoaDataGridViewTextBoxColumn.DataPropertyName = "LoaiHangHoa";
             this.loaiHangHoaDataGridViewTextBoxColumn.HeaderText = "LoaiHangHoa";
+            this.loaiHangHoaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.loaiHangHoaDataGridViewTextBoxColumn.Name = "loaiHangHoaDataGridViewTextBoxColumn";
+            this.loaiHangHoaDataGridViewTextBoxColumn.Width = 159;
             // 
             // soTienDataGridViewTextBoxColumn
             // 
             this.soTienDataGridViewTextBoxColumn.DataPropertyName = "SoTien";
             this.soTienDataGridViewTextBoxColumn.HeaderText = "SoTien";
+            this.soTienDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.soTienDataGridViewTextBoxColumn.Name = "soTienDataGridViewTextBoxColumn";
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.soTienDataGridViewTextBoxColumn.Width = 159;
             // 
             // soTienBanDataGridViewTextBoxColumn
             // 
             this.soTienBanDataGridViewTextBoxColumn.DataPropertyName = "SoTienBan";
             this.soTienBanDataGridViewTextBoxColumn.HeaderText = "SoTienBan";
+            this.soTienBanDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.soTienBanDataGridViewTextBoxColumn.Name = "soTienBanDataGridViewTextBoxColumn";
+            this.soTienBanDataGridViewTextBoxColumn.Width = 159;
+            // 
+            // nhapHangHoasBindingSource1
+            // 
+            this.nhapHangHoasBindingSource1.DataMember = "NhapHangHoas";
+            this.nhapHangHoasBindingSource1.DataSource = this.iM22DataSet2;
+            // 
+            // iM22DataSet2
+            // 
+            this.iM22DataSet2.DataSetName = "IM22DataSet2";
+            this.iM22DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nhapHangHoasBindingSource
             // 
@@ -170,9 +191,10 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(12, 489);
+            this.iconButton1.Location = new System.Drawing.Point(16, 602);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(288, 36);
+            this.iconButton1.Size = new System.Drawing.Size(384, 44);
             this.iconButton1.TabIndex = 13;
             this.iconButton1.Text = "   &Tìm kiếm";
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -181,18 +203,20 @@
             // tb_tenhangtim
             // 
             this.tb_tenhangtim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.tb_tenhangtim.Location = new System.Drawing.Point(160, 387);
+            this.tb_tenhangtim.Location = new System.Drawing.Point(213, 476);
+            this.tb_tenhangtim.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tenhangtim.Name = "tb_tenhangtim";
-            this.tb_tenhangtim.Size = new System.Drawing.Size(160, 31);
+            this.tb_tenhangtim.Size = new System.Drawing.Size(212, 36);
             this.tb_tenhangtim.TabIndex = 17;
             // 
             // lb_timhang
             // 
             this.lb_timhang.AutoSize = true;
             this.lb_timhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_timhang.Location = new System.Drawing.Point(8, 387);
+            this.lb_timhang.Location = new System.Drawing.Point(11, 476);
+            this.lb_timhang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_timhang.Name = "lb_timhang";
-            this.lb_timhang.Size = new System.Drawing.Size(149, 25);
+            this.lb_timhang.Size = new System.Drawing.Size(176, 30);
             this.lb_timhang.TabIndex = 17;
             this.lb_timhang.Text = "Tên hàng tìm :";
             // 
@@ -200,9 +224,10 @@
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "id", true));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.textBox2.Location = new System.Drawing.Point(163, 60);
+            this.textBox2.Location = new System.Drawing.Point(217, 74);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 31);
+            this.textBox2.Size = new System.Drawing.Size(212, 36);
             this.textBox2.TabIndex = 16;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -210,9 +235,10 @@
             // 
             this.lb_mahanghoa.AutoSize = true;
             this.lb_mahanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_mahanghoa.Location = new System.Drawing.Point(6, 60);
+            this.lb_mahanghoa.Location = new System.Drawing.Point(8, 74);
+            this.lb_mahanghoa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_mahanghoa.Name = "lb_mahanghoa";
-            this.lb_mahanghoa.Size = new System.Drawing.Size(150, 25);
+            this.lb_mahanghoa.Size = new System.Drawing.Size(175, 30);
             this.lb_mahanghoa.TabIndex = 15;
             this.lb_mahanghoa.Text = "Mã hàng hóa :";
             // 
@@ -220,9 +246,10 @@
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "SoTienBan", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.textBox1.Location = new System.Drawing.Point(163, 333);
+            this.textBox1.Location = new System.Drawing.Point(217, 410);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 31);
+            this.textBox1.Size = new System.Drawing.Size(212, 36);
             this.textBox1.TabIndex = 14;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -230,9 +257,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label1.Location = new System.Drawing.Point(5, 336);
+            this.label1.Location = new System.Drawing.Point(7, 414);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 25);
+            this.label1.Size = new System.Drawing.Size(116, 30);
             this.label1.TabIndex = 13;
             this.label1.Text = "Giá bán: ";
             // 
@@ -240,9 +268,10 @@
             // 
             this.tb_sotien.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "SoTien", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.tb_sotien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.tb_sotien.Location = new System.Drawing.Point(163, 287);
+            this.tb_sotien.Location = new System.Drawing.Point(217, 353);
+            this.tb_sotien.Margin = new System.Windows.Forms.Padding(4);
             this.tb_sotien.Name = "tb_sotien";
-            this.tb_sotien.Size = new System.Drawing.Size(160, 31);
+            this.tb_sotien.Size = new System.Drawing.Size(212, 36);
             this.tb_sotien.TabIndex = 12;
             this.tb_sotien.TextChanged += new System.EventHandler(this.tb_sotien_TextChanged);
             // 
@@ -250,9 +279,10 @@
             // 
             this.lb_sotien.AutoSize = true;
             this.lb_sotien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_sotien.Location = new System.Drawing.Point(5, 287);
+            this.lb_sotien.Location = new System.Drawing.Point(7, 353);
+            this.lb_sotien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_sotien.Name = "lb_sotien";
-            this.lb_sotien.Size = new System.Drawing.Size(91, 25);
+            this.lb_sotien.Size = new System.Drawing.Size(106, 30);
             this.lb_sotien.TabIndex = 11;
             this.lb_sotien.Text = "Số tiền :";
             // 
@@ -266,18 +296,20 @@
             "Hàng thịt",
             "Hàng đông lạnh",
             "Hàng giải khát"});
-            this.cb_loaihanghoa.Location = new System.Drawing.Point(163, 241);
+            this.cb_loaihanghoa.Location = new System.Drawing.Point(217, 297);
+            this.cb_loaihanghoa.Margin = new System.Windows.Forms.Padding(4);
             this.cb_loaihanghoa.Name = "cb_loaihanghoa";
-            this.cb_loaihanghoa.Size = new System.Drawing.Size(160, 33);
+            this.cb_loaihanghoa.Size = new System.Drawing.Size(212, 37);
             this.cb_loaihanghoa.TabIndex = 7;
             // 
             // tb_nhacungcap
             // 
             this.tb_nhacungcap.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "NhaCungCap", true));
             this.tb_nhacungcap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.tb_nhacungcap.Location = new System.Drawing.Point(163, 198);
+            this.tb_nhacungcap.Location = new System.Drawing.Point(217, 244);
+            this.tb_nhacungcap.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nhacungcap.Name = "tb_nhacungcap";
-            this.tb_nhacungcap.Size = new System.Drawing.Size(160, 31);
+            this.tb_nhacungcap.Size = new System.Drawing.Size(212, 36);
             this.tb_nhacungcap.TabIndex = 6;
             this.tb_nhacungcap.TextChanged += new System.EventHandler(this.tb_nhacungcap_TextChanged);
             // 
@@ -285,9 +317,10 @@
             // 
             this.tb_soluongnhap.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "SoLuongNhap", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N1"));
             this.tb_soluongnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.tb_soluongnhap.Location = new System.Drawing.Point(163, 151);
+            this.tb_soluongnhap.Location = new System.Drawing.Point(217, 186);
+            this.tb_soluongnhap.Margin = new System.Windows.Forms.Padding(4);
             this.tb_soluongnhap.Name = "tb_soluongnhap";
-            this.tb_soluongnhap.Size = new System.Drawing.Size(160, 31);
+            this.tb_soluongnhap.Size = new System.Drawing.Size(212, 36);
             this.tb_soluongnhap.TabIndex = 5;
             this.tb_soluongnhap.TextChanged += new System.EventHandler(this.tb_soluongnhap_TextChanged);
             // 
@@ -295,9 +328,10 @@
             // 
             this.tb_tenhanghoa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nhapHangHoasBindingSource, "TenHang", true));
             this.tb_tenhanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.tb_tenhanghoa.Location = new System.Drawing.Point(163, 106);
+            this.tb_tenhanghoa.Location = new System.Drawing.Point(217, 130);
+            this.tb_tenhanghoa.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tenhanghoa.Name = "tb_tenhanghoa";
-            this.tb_tenhanghoa.Size = new System.Drawing.Size(160, 31);
+            this.tb_tenhanghoa.Size = new System.Drawing.Size(212, 36);
             this.tb_tenhanghoa.TabIndex = 4;
             this.tb_tenhanghoa.TextChanged += new System.EventHandler(this.tb_tenhanghoa_TextChanged);
             // 
@@ -305,9 +339,10 @@
             // 
             this.lb_loaihanghoa.AutoSize = true;
             this.lb_loaihanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_loaihanghoa.Location = new System.Drawing.Point(5, 244);
+            this.lb_loaihanghoa.Location = new System.Drawing.Point(7, 300);
+            this.lb_loaihanghoa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_loaihanghoa.Name = "lb_loaihanghoa";
-            this.lb_loaihanghoa.Size = new System.Drawing.Size(161, 25);
+            this.lb_loaihanghoa.Size = new System.Drawing.Size(187, 30);
             this.lb_loaihanghoa.TabIndex = 3;
             this.lb_loaihanghoa.Text = "Loại hàng hóa :";
             // 
@@ -315,9 +350,10 @@
             // 
             this.lb_nhacungcap.AutoSize = true;
             this.lb_nhacungcap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_nhacungcap.Location = new System.Drawing.Point(5, 198);
+            this.lb_nhacungcap.Location = new System.Drawing.Point(7, 244);
+            this.lb_nhacungcap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_nhacungcap.Name = "lb_nhacungcap";
-            this.lb_nhacungcap.Size = new System.Drawing.Size(157, 25);
+            this.lb_nhacungcap.Size = new System.Drawing.Size(184, 30);
             this.lb_nhacungcap.TabIndex = 2;
             this.lb_nhacungcap.Text = "Nhà cung cấp :";
             // 
@@ -325,9 +361,10 @@
             // 
             this.lb_slnhap.AutoSize = true;
             this.lb_slnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_slnhap.Location = new System.Drawing.Point(5, 151);
+            this.lb_slnhap.Location = new System.Drawing.Point(7, 186);
+            this.lb_slnhap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_slnhap.Name = "lb_slnhap";
-            this.lb_slnhap.Size = new System.Drawing.Size(163, 25);
+            this.lb_slnhap.Size = new System.Drawing.Size(190, 30);
             this.lb_slnhap.TabIndex = 1;
             this.lb_slnhap.Text = "Số lượng nhập :";
             // 
@@ -339,9 +376,10 @@
             // 
             this.lb_tenhanghoa.AutoSize = true;
             this.lb_tenhanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lb_tenhanghoa.Location = new System.Drawing.Point(5, 106);
+            this.lb_tenhanghoa.Location = new System.Drawing.Point(7, 130);
+            this.lb_tenhanghoa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_tenhanghoa.Name = "lb_tenhanghoa";
-            this.lb_tenhanghoa.Size = new System.Drawing.Size(157, 25);
+            this.lb_tenhanghoa.Size = new System.Drawing.Size(183, 30);
             this.lb_tenhanghoa.TabIndex = 0;
             this.lb_tenhanghoa.Text = "Tên hàng hóa :";
             // 
@@ -349,9 +387,10 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 378);
+            this.panel2.Location = new System.Drawing.Point(0, 465);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 205);
+            this.panel2.Size = new System.Drawing.Size(3, 253);
             this.panel2.TabIndex = 2;
             // 
             // btn_save
@@ -364,9 +403,10 @@
             this.btn_save.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_save.IconSize = 30;
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(209, 443);
+            this.btn_save.Location = new System.Drawing.Point(279, 545);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(92, 28);
+            this.btn_save.Size = new System.Drawing.Size(123, 34);
             this.btn_save.TabIndex = 10;
             this.btn_save.Text = "  Lưu";
             this.btn_save.UseVisualStyleBackColor = true;
@@ -385,8 +425,9 @@
             this.panel1.Controls.Add(this.btn_remove);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 583);
+            this.panel1.Size = new System.Drawing.Size(427, 718);
             this.panel1.TabIndex = 3;
             // 
             // gb_ThongTin
@@ -413,7 +454,8 @@
             this.gb_ThongTin.Location = new System.Drawing.Point(0, 0);
             this.gb_ThongTin.Margin = new System.Windows.Forms.Padding(0);
             this.gb_ThongTin.Name = "gb_ThongTin";
-            this.gb_ThongTin.Size = new System.Drawing.Size(320, 378);
+            this.gb_ThongTin.Padding = new System.Windows.Forms.Padding(4);
+            this.gb_ThongTin.Size = new System.Drawing.Size(427, 465);
             this.gb_ThongTin.TabIndex = 0;
             this.gb_ThongTin.TabStop = false;
             this.gb_ThongTin.Text = "Quản lí hàng hóa";
@@ -428,9 +470,10 @@
             this.btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_add.IconSize = 30;
             this.btn_add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_add.Location = new System.Drawing.Point(13, 443);
+            this.btn_add.Location = new System.Drawing.Point(17, 545);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(92, 28);
+            this.btn_add.Size = new System.Drawing.Size(123, 34);
             this.btn_add.TabIndex = 8;
             this.btn_add.Text = "  Thêm";
             this.btn_add.UseVisualStyleBackColor = true;
@@ -446,26 +489,34 @@
             this.btn_remove.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_remove.IconSize = 30;
             this.btn_remove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_remove.Location = new System.Drawing.Point(111, 443);
+            this.btn_remove.Location = new System.Drawing.Point(148, 545);
+            this.btn_remove.Margin = new System.Windows.Forms.Padding(4);
             this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(92, 28);
+            this.btn_remove.Size = new System.Drawing.Size(123, 34);
             this.btn_remove.TabIndex = 9;
             this.btn_remove.Text = "  Xóa";
             this.btn_remove.UseVisualStyleBackColor = true;
             this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
+            // nhapHangHoasTableAdapter1
+            // 
+            this.nhapHangHoasTableAdapter1.ClearBeforeFill = true;
+            // 
             // formQLHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 583);
+            this.ClientSize = new System.Drawing.Size(1435, 718);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formQLHang";
             this.Text = "test";
             this.Load += new System.EventHandler(this.test_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhapHangHoasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iM22DataSet)).EndInit();
@@ -513,7 +564,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nhaCungCapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiHangHoaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTienBanDataGridViewTextBoxColumn;
+        private IM22DataSet2 iM22DataSet2;
+        private System.Windows.Forms.BindingSource nhapHangHoasBindingSource1;
+        private IM22DataSet2TableAdapters.NhapHangHoasTableAdapter nhapHangHoasTableAdapter1;
     }
 }

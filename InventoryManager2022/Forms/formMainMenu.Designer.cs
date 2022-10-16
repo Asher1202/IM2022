@@ -67,8 +67,9 @@
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(199, 450);
+            this.panelMenu.Size = new System.Drawing.Size(265, 554);
             this.panelMenu.TabIndex = 1;
             // 
             // panelSubNhanVien
@@ -77,9 +78,10 @@
             this.panelSubNhanVien.Controls.Add(this.btn_xemhoadon);
             this.panelSubNhanVien.Controls.Add(this.bt_quanlinhanvien);
             this.panelSubNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubNhanVien.Location = new System.Drawing.Point(0, 302);
+            this.panelSubNhanVien.Location = new System.Drawing.Point(0, 372);
+            this.panelSubNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.panelSubNhanVien.Name = "panelSubNhanVien";
-            this.panelSubNhanVien.Size = new System.Drawing.Size(199, 50);
+            this.panelSubNhanVien.Size = new System.Drawing.Size(265, 62);
             this.panelSubNhanVien.TabIndex = 9;
             // 
             // btn_xemhoadon
@@ -87,9 +89,10 @@
             this.btn_xemhoadon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_xemhoadon.FlatAppearance.BorderSize = 0;
             this.btn_xemhoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_xemhoadon.Location = new System.Drawing.Point(0, 23);
+            this.btn_xemhoadon.Location = new System.Drawing.Point(0, 28);
+            this.btn_xemhoadon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xemhoadon.Name = "btn_xemhoadon";
-            this.btn_xemhoadon.Size = new System.Drawing.Size(199, 23);
+            this.btn_xemhoadon.Size = new System.Drawing.Size(265, 28);
             this.btn_xemhoadon.TabIndex = 3;
             this.btn_xemhoadon.Text = "Xem hóa đơn";
             this.btn_xemhoadon.UseVisualStyleBackColor = true;
@@ -101,8 +104,9 @@
             this.bt_quanlinhanvien.FlatAppearance.BorderSize = 0;
             this.bt_quanlinhanvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_quanlinhanvien.Location = new System.Drawing.Point(0, 0);
+            this.bt_quanlinhanvien.Margin = new System.Windows.Forms.Padding(4);
             this.bt_quanlinhanvien.Name = "bt_quanlinhanvien";
-            this.bt_quanlinhanvien.Size = new System.Drawing.Size(199, 23);
+            this.bt_quanlinhanvien.Size = new System.Drawing.Size(265, 28);
             this.bt_quanlinhanvien.TabIndex = 2;
             this.bt_quanlinhanvien.Text = "Quản lí nhân viên";
             this.bt_quanlinhanvien.UseVisualStyleBackColor = true;
@@ -119,9 +123,10 @@
             this.btn_nhanvien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_nhanvien.IconSize = 40;
             this.btn_nhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_nhanvien.Location = new System.Drawing.Point(0, 251);
+            this.btn_nhanvien.Location = new System.Drawing.Point(0, 309);
+            this.btn_nhanvien.Margin = new System.Windows.Forms.Padding(4);
             this.btn_nhanvien.Name = "btn_nhanvien";
-            this.btn_nhanvien.Size = new System.Drawing.Size(199, 51);
+            this.btn_nhanvien.Size = new System.Drawing.Size(265, 63);
             this.btn_nhanvien.TabIndex = 8;
             this.btn_nhanvien.Text = "Nhân viên";
             this.btn_nhanvien.UseVisualStyleBackColor = false;
@@ -133,9 +138,10 @@
             this.panelSubHangHoa.Controls.Add(this.button2);
             this.panelSubHangHoa.Controls.Add(this.button1);
             this.panelSubHangHoa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubHangHoa.Location = new System.Drawing.Point(0, 202);
+            this.panelSubHangHoa.Location = new System.Drawing.Point(0, 249);
+            this.panelSubHangHoa.Margin = new System.Windows.Forms.Padding(4);
             this.panelSubHangHoa.Name = "panelSubHangHoa";
-            this.panelSubHangHoa.Size = new System.Drawing.Size(199, 49);
+            this.panelSubHangHoa.Size = new System.Drawing.Size(265, 60);
             this.panelSubHangHoa.TabIndex = 3;
             // 
             // button2
@@ -143,9 +149,10 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 23);
+            this.button2.Location = new System.Drawing.Point(0, 28);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(199, 23);
+            this.button2.Size = new System.Drawing.Size(265, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "Bán hàng ";
             this.button2.UseVisualStyleBackColor = true;
@@ -157,8 +164,9 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 23);
+            this.button1.Size = new System.Drawing.Size(265, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Quản lí hàng hóa";
             this.button1.UseVisualStyleBackColor = true;
@@ -175,9 +183,10 @@
             this.btn_hanghoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_hanghoa.IconSize = 40;
             this.btn_hanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_hanghoa.Location = new System.Drawing.Point(0, 151);
+            this.btn_hanghoa.Location = new System.Drawing.Point(0, 186);
+            this.btn_hanghoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_hanghoa.Name = "btn_hanghoa";
-            this.btn_hanghoa.Size = new System.Drawing.Size(199, 51);
+            this.btn_hanghoa.Size = new System.Drawing.Size(265, 63);
             this.btn_hanghoa.TabIndex = 2;
             this.btn_hanghoa.Text = "Hàng hóa";
             this.btn_hanghoa.UseVisualStyleBackColor = false;
@@ -195,9 +204,10 @@
             this.btn_thongke.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_thongke.IconSize = 40;
             this.btn_thongke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_thongke.Location = new System.Drawing.Point(0, 100);
+            this.btn_thongke.Location = new System.Drawing.Point(0, 123);
+            this.btn_thongke.Margin = new System.Windows.Forms.Padding(4);
             this.btn_thongke.Name = "btn_thongke";
-            this.btn_thongke.Size = new System.Drawing.Size(199, 51);
+            this.btn_thongke.Size = new System.Drawing.Size(265, 63);
             this.btn_thongke.TabIndex = 1;
             this.btn_thongke.Text = "Thống kê";
             this.btn_thongke.UseVisualStyleBackColor = false;
@@ -209,8 +219,9 @@
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(199, 100);
+            this.panel2.Size = new System.Drawing.Size(265, 123);
             this.panel2.TabIndex = 0;
             // 
             // pictureBox4
@@ -219,9 +230,9 @@
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = global::InventoryManager2022.Properties.Resources.bach_hoa_xanh_logo_02_06_2020_200x200_2;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(199, 100);
+            this.pictureBox4.Size = new System.Drawing.Size(265, 123);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
@@ -234,18 +245,20 @@
             this.panel1.Controls.Add(this.lb_choosed);
             this.panel1.Controls.Add(this.iconChild);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(199, 0);
+            this.panel1.Location = new System.Drawing.Point(265, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(601, 36);
+            this.panel1.Size = new System.Drawing.Size(802, 44);
             this.panel1.TabIndex = 2;
             // 
             // lb_name
             // 
             this.lb_name.AutoSize = true;
             this.lb_name.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_name.Location = new System.Drawing.Point(490, 0);
+            this.lb_name.Location = new System.Drawing.Point(672, 0);
+            this.lb_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_name.Name = "lb_name";
-            this.lb_name.Size = new System.Drawing.Size(56, 13);
+            this.lb_name.Size = new System.Drawing.Size(66, 16);
             this.lb_name.TabIndex = 3;
             this.lb_name.Text = "Xin Chào :";
             this.lb_name.Click += new System.EventHandler(this.lb_name_Click);
@@ -254,18 +267,20 @@
             // 
             this.lb_xinchao.AutoSize = true;
             this.lb_xinchao.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_xinchao.Location = new System.Drawing.Point(546, 0);
+            this.lb_xinchao.Location = new System.Drawing.Point(738, 0);
+            this.lb_xinchao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_xinchao.Name = "lb_xinchao";
-            this.lb_xinchao.Size = new System.Drawing.Size(55, 13);
+            this.lb_xinchao.Size = new System.Drawing.Size(64, 16);
             this.lb_xinchao.TabIndex = 2;
             this.lb_xinchao.Text = "Xin chào :";
             // 
             // lb_choosed
             // 
             this.lb_choosed.AutoSize = true;
-            this.lb_choosed.Location = new System.Drawing.Point(42, 9);
+            this.lb_choosed.Location = new System.Drawing.Point(56, 11);
+            this.lb_choosed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_choosed.Name = "lb_choosed";
-            this.lb_choosed.Size = new System.Drawing.Size(53, 13);
+            this.lb_choosed.Size = new System.Drawing.Size(64, 16);
             this.lb_choosed.TabIndex = 1;
             this.lb_choosed.Text = "Thống kê";
             // 
@@ -276,9 +291,11 @@
             this.iconChild.IconChar = FontAwesome.Sharp.IconChar.MoneyBills;
             this.iconChild.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconChild.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconChild.Location = new System.Drawing.Point(3, 1);
+            this.iconChild.IconSize = 39;
+            this.iconChild.Location = new System.Drawing.Point(4, 1);
+            this.iconChild.Margin = new System.Windows.Forms.Padding(4);
             this.iconChild.Name = "iconChild";
-            this.iconChild.Size = new System.Drawing.Size(32, 32);
+            this.iconChild.Size = new System.Drawing.Size(43, 39);
             this.iconChild.TabIndex = 0;
             this.iconChild.TabStop = false;
             // 
@@ -286,30 +303,33 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(199, 36);
+            this.panel3.Location = new System.Drawing.Point(265, 44);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(601, 1);
+            this.panel3.Size = new System.Drawing.Size(802, 1);
             this.panel3.TabIndex = 3;
             // 
             // panelShow
             // 
             this.panelShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelShow.Location = new System.Drawing.Point(199, 37);
+            this.panelShow.Location = new System.Drawing.Point(265, 45);
+            this.panelShow.Margin = new System.Windows.Forms.Padding(4);
             this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(601, 413);
+            this.panelShow.Size = new System.Drawing.Size(802, 509);
             this.panelShow.TabIndex = 4;
             this.panelShow.Paint += new System.Windows.Forms.PaintEventHandler(this.panelShow_Paint);
             // 
             // formMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panelShow);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formMainMenu";
             this.Text = "formMainMenu";
             this.Load += new System.EventHandler(this.formMainMenu_Load);

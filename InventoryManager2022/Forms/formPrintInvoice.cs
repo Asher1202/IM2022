@@ -40,7 +40,7 @@ namespace InventoryManager2022.Forms
             {
                 //ReportParameter rp = new ReportParameter("MAHD");
                 //rp.Values.Add(formHoaDon.instance.maHD);
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-9HKHU3U;Initial Catalog=IM22;Integrated Security=True");
+                SqlConnection conn = new SqlConnection("Data Source=MSI\\BATRUONG;Initial Catalog=IM22;Integrated Security=True");
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;

@@ -39,7 +39,7 @@ namespace InventoryManager2022
         {
             // TODO: This line of code loads data into the 'iM22DataSet.inHoaDons' table. You can move, or remove it, as needed.
             this.inHoaDonsTableAdapter.Fill(this.iM22DataSet.inHoaDons);
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-9HKHU3U;Initial Catalog=IM22;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=MSI\\BATRUONG;Initial Catalog=IM22;Integrated Security=True");
             try
             {
                 con.Open();
@@ -65,6 +65,35 @@ namespace InventoryManager2022
             {
                 MessageBox.Show("Loi truy van" + EX);
             }
+           
+                con.Open();
+                SqlCommand sc = new SqlCommand();
+                sc.Connection = con;
+                sc.CommandType = CommandType.StoredProcedure;
+                sc.CommandText = "ThongKe";
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(sc);
+                da.Fill(dt);
+                con.Close();
+                chart1.DataSource = dt;
+                chart1.Series["HoaDon"].XValueMember = "orderID"; 
+                chart1.Series["HoaDon"].YValueMembers = "giatien";
+                chart1.Titles.Add("Thống kê top 5 hóa đơn");
+
+                con.Open();
+                SqlCommand sh = new SqlCommand();
+                sh.Connection = con;
+                sh.CommandType = CommandType.StoredProcedure;
+                sh.CommandText = "HangBan";
+                DataTable hu = new DataTable();
+                SqlDataAdapter ad = new SqlDataAdapter(sh);
+                ad.Fill(hu);
+                con.Close();
+                chart2.DataSource = hu;
+                chart2.Series["BanChay"].XValueMember = "TenHang"; 
+                chart2.Series["BanChay"].YValueMembers = "SoLuongBan";
+                chart2.Titles.Add("Thống kê top 3 mặt hàng bán chạy");
+
         }
 
         private void formThongKe_ResizeEnd_1(object sender, EventArgs e)
@@ -73,6 +102,11 @@ namespace InventoryManager2022
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
         {
 
         }

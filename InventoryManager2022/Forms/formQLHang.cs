@@ -70,6 +70,8 @@ namespace InventoryManager2022.Forms
 
         private void test_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'iM22DataSet2.NhapHangHoas' table. You can move, or remove it, as needed.
+            this.nhapHangHoasTableAdapter1.Fill(this.iM22DataSet2.NhapHangHoas);
             this.nhapHangHoasTableAdapter.Fill(this.iM22DataSet.NhapHangHoas);
             using (HangHoaModelContext db = new HangHoaModelContext())
             {
@@ -78,8 +80,8 @@ namespace InventoryManager2022.Forms
             gb_ThongTin.Enabled = false;
             //panel1.Enabled = false;
             btn_add.Enabled = true;
-            btn_remove.Enabled = false;
-            btn_save.Enabled = false;
+            btn_remove.Enabled = true;
+            btn_save.Enabled = true;
         }
 
         private void btn_add_Click(object sender, EventArgs e)

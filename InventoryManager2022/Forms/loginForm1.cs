@@ -33,7 +33,7 @@ namespace InventoryManager2022.Forms
         private void btnlogin_Click(object sender, EventArgs e) 
         {
             {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-9HKHU3U;Initial Catalog=IM22;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=MSI\\BATRUONG;Initial Catalog=IM22;Integrated Security=True");
                 try
                 {
 
@@ -87,6 +87,13 @@ namespace InventoryManager2022.Forms
             {
                 txtPass.PasswordChar = '*';
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = MessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }
